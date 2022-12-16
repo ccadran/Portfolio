@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "barracuda-bold";
+  src: url(/asstets/fonts/Barracuda-Bold.ttf);
+}
+@font-face {
+  font-family: "satoshi-regular";
+  src: url(/asstets/fonts/Satoshi-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+body {
+  padding: 0 60px;
+  background: #000;
+  color: #fff;
+}
+body p {
+  font-family: satoshi-regular, sans-serif;
+  font-size: 24px;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "barracuda-bold";
+  src: url(/asstets/fonts/Barracuda-Bold.ttf);
+}
+@font-face {
+  font-family: "satoshi-regular";
+  src: url(/asstets/fonts/Satoshi-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+body {
+  padding: 0 60px;
+  background: #000;
+  color: #fff;
+}
+body p {
+  font-family: satoshi-regular, sans-serif;
+  font-size: 24px;
+}
+body h2 {
+  font-size: 96px;
+  font-family: barracuda-bold, serif;
+}
+
+nav {
+  font-family: barracuda-bold, serif;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+nav h4 {
+  font-size: 32px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-left: 65px;
+  font-size: 24px;
+}
+
+.hero-container {
+  padding: 200px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.hero-container h1 {
+  font-family: barracuda-bold, serif;
+  font-size: 160px;
+}
+.hero-container h3 {
+  font-family: barracuda-bold, serif;
+  font-size: 64px;
+  padding-right: 50px;
+  margin-bottom: -50px;
+  text-align: right;
+  padding-left: 50px;
+}
+
+main {
+  margin: 0 60px;
+}
+main .about-me {
+  margin-bottom: 200px;
+}
+main .about-me h2 {
+  margin-bottom: 40px;
+}
+main .about-me .about-me-container {
+  display: flex;
+  justify-content: space-between;
+}
+main .about-me .about-me-container .img-container {
+  width: 50%;
+  display: flex;
+  justify-content: left;
+}
+main .about-me .about-me-container .img-container img {
+  width: 50%;
+  height: 85%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .about-me .about-me-container p {
+  width: 50%;
+}
+main .projects p {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+main .projects .projects-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+}
+main .projects .project {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+main .projects .project h5 {
+  font-family: barracuda-bold, serif;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+main .projects .project .img-container {
+  width: 500px;
+  height: 281px;
+  margin-bottom: 15px;
+}
+main .projects .project .img-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .projects #other-project {
+  padding: 15px;
+  font-family: barracuda-bold, serif;
+  font-size: 18px;
+  background: #fff;
+  border: none;
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+}/*# sourceMappingURL=index.css.map */

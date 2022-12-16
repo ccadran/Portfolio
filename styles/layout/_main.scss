@@ -1,0 +1,72 @@
+main {
+    margin: 0 60px;
+    .about-me {
+        margin-bottom: 200px;
+        h2 {
+            margin-bottom: 40px;
+        }
+        .about-me-container {
+            display: flex;
+            justify-content: space-between;
+            .img-container {
+                width: 50%;
+                display: flex;
+
+                justify-content: left;
+
+                img {
+                    width: 50%;
+                    height: 85%;
+                    object-fit: cover;
+                }
+            }
+            p {
+                width: 50%;
+            }
+        }
+    }
+    .projects {
+        p {
+            margin-top: 30px;
+            margin-bottom: 70px;
+        }
+        .projects-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            justify-items: center;
+        }
+        .project {
+            display: flex;
+            flex-direction: column;
+
+            // margin-right: 90px;
+            margin-bottom: 80px;
+            h5 {
+                font-family: $barracuda;
+                font-size: 32px;
+                margin-bottom: 10px;
+            }
+
+            .img-container {
+                width: 500px;
+                height: 281px;
+                margin-bottom: 15px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        #other-project {
+            padding: 15px;
+            font-family: $barracuda;
+            font-size: 18px;
+            background: $white;
+            border: none;
+            align-items: center;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

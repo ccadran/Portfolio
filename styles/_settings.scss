@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "barracuda-bold";
+    src: url(/asstets/fonts/Barracuda-Bold.ttf);
+}
+@font-face {
+    font-family: "satoshi-regular";
+    src: url(/asstets/fonts/Satoshi-Regular.otf);
+}
+
+$barracuda: barracuda-bold, serif;
+$satoshi: satoshi-regular, sans-serif;
+$black: #000;
+$white: #fff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+body {
+    padding: 0 60px;
+    background: $black;
+    color: $white;
+
+    p {
+        font-family: $satoshi;
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 96px;
+        font-family: $barracuda;
+    }
+}
