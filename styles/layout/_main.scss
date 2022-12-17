@@ -72,6 +72,7 @@ main {
     }
     .skills {
         margin-top: 200px;
+
         .all-skills {
             display: flex;
             justify-content: space-between;
@@ -79,16 +80,26 @@ main {
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+            #blue {
+                background: #0f007d;
+            }
+            #white {
+                background: #fff;
+            }
+            #orange {
+                background: #e94731;
+            }
             .skills-container {
                 width: 300px;
                 height: 300px;
                 margin: 50px;
-                background: $white;
+                // background: $white;
                 color: $black;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
                 p {
                     font-family: $barracuda;
                     font-size: 24px;
@@ -104,6 +115,25 @@ main {
                     img {
                         margin: 5px 5px;
                     }
+                }
+            }
+        }
+    }
+    .contact {
+        margin-bottom: 200px;
+        .infos-contact {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            font-family: $barracuda;
+            p {
+                font-family: $barracuda;
+                font-size: 36px;
+            }
+            ul {
+                display: flex;
+                li {
+                    margin-left: 50px;
                 }
             }
         }

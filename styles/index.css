@@ -15,7 +15,7 @@
 }
 
 body {
-  padding: 0 60px;
+  margin: 0 60px;
   background: #000;
   color: #fff;
 }
@@ -145,11 +145,19 @@ main .skills .all-skills {
   align-items: center;
   justify-content: center;
 }
+main .skills .all-skills #blue {
+  background: #0f007d;
+}
+main .skills .all-skills #white {
+  background: #fff;
+}
+main .skills .all-skills #orange {
+  background: #e94731;
+}
 main .skills .all-skills .skills-container {
   width: 300px;
   height: 300px;
   margin: 50px;
-  background: #fff;
   color: #000;
   display: flex;
   flex-direction: column;
@@ -171,4 +179,84 @@ main .skills .all-skills .skills-container .logo-skills {
 }
 main .skills .all-skills .skills-container .logo-skills img {
   margin: 5px 5px;
+}
+main .contact {
+  margin-bottom: 200px;
+}
+main .contact .infos-contact {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  font-family: barracuda-bold, serif;
+}
+main .contact .infos-contact p {
+  font-family: barracuda-bold, serif;
+  font-size: 36px;
+}
+main .contact .infos-contact ul {
+  display: flex;
+}
+main .contact .infos-contact ul li {
+  margin-left: 50px;
+}
+
+footer {
+  background: #fff;
+  margin: 0 -120px;
+  padding: 0 120px;
+  color: #000;
+}
+footer .main-footer {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 80px 0;
+}
+footer .main-footer .left-footer {
+  font-family: barracuda-bold, serif;
+  font-size: 28px;
+  width: 80%;
+}
+footer .main-footer .left-footer ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+footer .main-footer .footer-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .main-footer .footer-contact p {
+  font-family: barracuda-bold, serif;
+  font-size: 28px;
+}
+footer .main-footer .footer-contact ul {
+  margin-left: 30px;
+  margin-bottom: 0;
+  width: 50%;
+}
+footer .main-footer .footer-contact img {
+  width: 70%;
+}
+footer .under-footer {
+  border-top: 1px solid #000;
+  margin: 0 -120px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .under-footer #legal {
+  width: 250px;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  font-family: barracuda-bold, serif;
+  font-size: 24px;
+  background: #fff;
+  border: 1px solid #000;
+}
+footer .under-footer p {
+  font-family: satoshi-regular, sans-serif;
+  font-weight: bold;
 }/*# sourceMappingURL=index.css.map */
