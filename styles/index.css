@@ -68,7 +68,7 @@ main {
   margin: 0 60px;
 }
 main .about-me {
-  margin-bottom: 200px;
+  margin-top: 200px;
 }
 main .about-me h2 {
   margin-bottom: 40px;
@@ -91,9 +91,12 @@ main .about-me .about-me-container .img-container img {
 main .about-me .about-me-container p {
   width: 50%;
 }
+main .projects {
+  margin-top: 200px;
+}
 main .projects p {
-  margin-top: 30px;
-  margin-bottom: 70px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 main .projects .projects-container {
   display: grid;
@@ -130,4 +133,42 @@ main .projects #other-project {
   align-items: center;
   display: block;
   margin: 0 auto;
+}
+main .skills {
+  margin-top: 200px;
+}
+main .skills .all-skills {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+main .skills .all-skills .skills-container {
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+  background: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .skills .all-skills .skills-container p {
+  font-family: barracuda-bold, serif;
+  font-size: 24px;
+}
+main .skills .all-skills .skills-container .logo-skills {
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 30px;
+}
+main .skills .all-skills .skills-container .logo-skills img {
+  margin: 5px 5px;
 }/*# sourceMappingURL=index.css.map */
