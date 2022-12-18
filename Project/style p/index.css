@@ -22,4 +22,90 @@ body {
 body p {
   font-family: satoshi-regular, sans-serif;
   font-size: 24px;
+}
+
+nav {
+  font-family: barracuda-bold, serif;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+nav h4 {
+  font-size: 32px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-left: 65px;
+  font-size: 24px;
+}
+
+.hero-container {
+  margin-top: 200px;
+  display: flex;
+  margin-bottom: 100px;
+}
+.hero-container h1 {
+  width: 60%;
+  font-family: barracuda-bold, serif;
+  font-size: 100px;
+}
+.hero-container .presentation {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.hero-container .presentation h4 {
+  padding: 15px 0;
+  font-family: satoshi-regular, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+.hero-container .presentation p {
+  font-size: 20px;
+  margin: 50px 0;
+}
+.hero-container .presentation .view-project {
+  width: 150px;
+  padding: 10px 15px;
+  font-family: barracuda-bold, serif;
+  font-size: 18px;
+}
+
+main .cover {
+  max-width: 2100px;
+  margin: 100px auto 200px auto;
+}
+main .cover img {
+  width: 100%;
+  height: 100%;
+}
+main .project-description {
+  display: flex;
+  margin: 0 60px;
+  justify-content: space-between;
+}
+main .project-description .txt-project {
+  width: 40%;
+  margin-right: 50px;
+}
+main .project-description .txt-project h4 {
+  font-family: barracuda-bold, serif;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+main .project-description .txt-project p {
+  font-size: 24px;
+}
+main .project-description .img-project {
+  width: 50%;
+}
+main .project-description .img-project .img-container {
+  width: 100%;
+  margin-bottom: 100px;
+}
+main .project-description .img-project .img-container img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=index.css.map */
