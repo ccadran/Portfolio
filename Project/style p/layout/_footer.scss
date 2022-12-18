@@ -16,6 +16,13 @@ footer {
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 70px;
+                li {
+                    transition: 0.2s;
+                    &:hover {
+                        cursor: pointer;
+                        color: rgb(73, 73, 73);
+                    }
+                }
             }
         }
         .footer-contact {

@@ -5,12 +5,22 @@ nav {
     margin-top: 40px;
     h4 {
         font-size: 32px;
+        transition: 0.2s;
+        &:hover {
+            cursor: pointer;
+            color: grey;
+        }
     }
     ul {
         display: flex;
         li {
             margin-left: 65px;
             font-size: 24px;
+            transition: 0.2s;
+            &:hover {
+                cursor: pointer;
+                color: grey;
+            }
         }
     }
 }
