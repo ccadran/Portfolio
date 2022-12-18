@@ -22,4 +22,151 @@ body {
 body p {
   font-family: satoshi-regular, sans-serif;
   font-size: 24px;
+}
+
+nav {
+  font-family: barracuda-bold, serif;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+nav h4 {
+  font-size: 32px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-left: 65px;
+  font-size: 24px;
+}
+
+.hero-container {
+  padding: 200px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.hero-container h1 {
+  font-family: barracuda-bold, serif;
+  font-size: 160px;
+}
+.hero-container p {
+  width: 50%;
+  font-size: 24px;
+  margin-bottom: -50px;
+  text-align: left;
+}
+
+main .projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .projects .project {
+  border: 1px solid #fff;
+  width: 90%;
+  margin: 100px auto;
+  padding: 20px 50px;
+}
+main .projects .project h3 {
+  font-size: 48px;
+  font-family: barracuda-bold, serif;
+  margin-bottom: 30px;
+}
+main .projects .project .content {
+  display: flex;
+}
+main .projects .project .content .img-container {
+  width: 50%;
+}
+main .projects .project .content .img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+main .projects .project .content .left {
+  width: 50%;
+  padding-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .projects .project .content .left p {
+  font-size: 20px;
+}
+main .projects .project .content .left h4 {
+  padding: 15px 0;
+  font-family: satoshi-regular, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+main .projects .project .content .left .view-project {
+  width: 150px;
+  padding: 10px 15px;
+  font-family: barracuda-bold, serif;
+  font-size: 18px;
+}
+
+footer {
+  background: #fff;
+  margin: 0 -120px;
+  padding: 0 120px;
+  color: #000;
+}
+footer .main-footer {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 80px 0;
+}
+footer .main-footer .left-footer {
+  font-family: barracuda-bold, serif;
+  font-size: 28px;
+  width: 80%;
+}
+footer .main-footer .left-footer ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+footer .main-footer .footer-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .main-footer .footer-contact p {
+  font-family: barracuda-bold, serif;
+  font-size: 28px;
+}
+footer .main-footer .footer-contact ul {
+  margin-left: 30px;
+  margin-bottom: 0;
+  width: 50%;
+}
+footer .main-footer .footer-contact img {
+  width: 70%;
+}
+footer .under-footer {
+  border-top: 1px solid #000;
+  margin: 0 -120px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .under-footer #legal {
+  width: 250px;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  font-family: barracuda-bold, serif;
+  font-size: 24px;
+  background: #fff;
+  border: 1px solid #000;
+}
+footer .under-footer p {
+  font-family: satoshi-regular, sans-serif;
+  font-weight: bold;
 }/*# sourceMappingURL=index.css.map */
