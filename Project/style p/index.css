@@ -49,7 +49,7 @@ nav ul li {
 .hero-container h1 {
   width: 60%;
   font-family: barracuda-bold, serif;
-  font-size: 100px;
+  font-size: 120px;
 }
 .hero-container .presentation {
   width: 40%;
@@ -108,4 +108,86 @@ main .project-description .img-project .img-container {
 main .project-description .img-project .img-container img {
   width: 100%;
   height: 100%;
+}
+main .tools {
+  margin: 100px 60px 200px 60px;
+}
+main .tools h2 {
+  font-size: 100px;
+  font-family: barracuda-bold, serif;
+}
+main .tools .tools-container ul {
+  display: flex;
+  margin: 50px 0;
+}
+main .tools .tools-container ul li {
+  margin-right: 30px;
+}
+main .tools .tools-container .view-project {
+  margin-top: 50px;
+  width: 150px;
+  padding: 10px 15px;
+  font-family: barracuda-bold, serif;
+  font-size: 18px;
+}
+
+footer {
+  background: #fff;
+  margin: 0 -120px;
+  padding: 0 120px;
+  color: #000;
+}
+footer .main-footer {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 80px 0;
+}
+footer .main-footer .left-footer {
+  font-family: barracuda-bold, serif;
+  font-size: 28px;
+  width: 80%;
+}
+footer .main-footer .left-footer ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+footer .main-footer .footer-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .main-footer .footer-contact p {
+  font-family: barracuda-bold, serif;
+  font-size: 28px;
+}
+footer .main-footer .footer-contact ul {
+  margin-left: 30px;
+  margin-bottom: 0;
+  width: 50%;
+}
+footer .main-footer .footer-contact img {
+  width: 70%;
+}
+footer .under-footer {
+  border-top: 1px solid #000;
+  margin: 0 -120px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .under-footer #legal {
+  width: 250px;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  font-family: barracuda-bold, serif;
+  font-size: 24px;
+  background: #fff;
+  border: 1px solid #000;
+}
+footer .under-footer p {
+  font-family: satoshi-regular, sans-serif;
+  font-weight: bold;
 }/*# sourceMappingURL=index.css.map */

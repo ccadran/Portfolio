@@ -36,4 +36,27 @@ main {
             }
         }
     }
+    .tools {
+        margin: 100px 60px 200px 60px;
+        h2 {
+            font-size: 100px;
+            font-family: $barracuda;
+        }
+        .tools-container {
+            ul {
+                display: flex;
+                margin: 50px 0;
+                li {
+                    margin-right: 30px;
+                }
+            }
+            .view-project {
+                margin-top: 50px;
+                width: 150px;
+                padding: 10px 15px;
+                font-family: $barracuda;
+                font-size: 18px;
+            }
+        }
+    }
 }
