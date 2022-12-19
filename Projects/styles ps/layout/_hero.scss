@@ -38,5 +38,12 @@ nav {
         font-size: 24px;
         margin-bottom: -50px;
         text-align: left;
+        &:after {
+            content: url(/asstets/img/svg-deco.svg);
+            position: absolute;
+            right: -80px;
+            top: 0;
+            z-index: -2;
+        }
     }
 }

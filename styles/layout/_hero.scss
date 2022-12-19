@@ -40,5 +40,13 @@ nav {
         margin-bottom: -50px;
         text-align: right;
         padding-left: 50px;
+
+        &:after {
+            content: url(/asstets/img/svg-deco.svg);
+            position: absolute;
+            right: 0;
+            top: 100px;
+            z-index: -2;
+        }
     }
 }

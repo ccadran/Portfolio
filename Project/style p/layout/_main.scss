@@ -41,6 +41,14 @@ main {
         h2 {
             font-size: 100px;
             font-family: $barracuda;
+            position: relative;
+            &:after {
+                content: url(/asstets/img/svg-deco.svg);
+                position: absolute;
+                left: -600px;
+                top: -500px;
+                z-index: -2;
+            }
         }
         .tools-container {
             ul {

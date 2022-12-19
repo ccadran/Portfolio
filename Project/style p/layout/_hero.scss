@@ -27,11 +27,18 @@ nav {
 .hero-container {
     margin-top: 200px;
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     h1 {
         width: 60%;
         font-family: $barracuda;
         font-size: 120px;
+        &:after {
+            content: url(/asstets/img/svg-deco.svg);
+            position: absolute;
+            left: -300px;
+            top: -100px;
+            z-index: -2;
+        }
     }
     .presentation {
         width: 40%;

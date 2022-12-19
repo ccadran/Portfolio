@@ -18,6 +18,7 @@ body {
   padding: 0 60px;
   background: #000;
   color: #fff;
+  position: relative;
 }
 body p {
   font-family: satoshi-regular, sans-serif;
@@ -66,6 +67,13 @@ nav ul li:hover {
   font-size: 24px;
   margin-bottom: -50px;
   text-align: left;
+}
+.hero-container p:after {
+  content: url(/asstets/img/svg-deco.svg);
+  position: absolute;
+  right: -80px;
+  top: 0;
+  z-index: -2;
 }
 
 main .projects {
@@ -122,9 +130,17 @@ main .projects .project .content .left .view-project {
 
 footer {
   background: #fff;
-  margin: 0 -120px;
+  margin: 150px -120px 0 -120px;
   padding: 0 120px;
   color: #000;
+  position: relative;
+}
+footer:before {
+  content: url(/asstets/img/svg-deco.svg);
+  position: absolute;
+  left: -300px;
+  top: -100%;
+  z-index: -2;
 }
 footer .main-footer {
   display: grid;

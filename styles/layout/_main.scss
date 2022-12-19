@@ -1,5 +1,5 @@
 main {
-    margin: 0 60px;
+    padding: 0 60px;
     .about-me {
         margin-top: 200px;
         h2 {
@@ -27,6 +27,17 @@ main {
     }
     .projects {
         margin-top: 200px;
+        h2 {
+            position: relative;
+            &:after {
+                content: url(/asstets/img/svg-deco.svg);
+                position: absolute;
+                left: -450px;
+                top: -400px;
+                z-index: -2;
+            }
+        }
+
         p {
             margin-top: 50px;
             margin-bottom: 100px;
@@ -72,7 +83,16 @@ main {
     }
     .skills {
         margin-top: 200px;
-
+        h2 {
+            position: relative;
+            &:after {
+                content: url(/asstets/img/svg-deco.svg);
+                position: absolute;
+                right: -400px;
+                top: -500px;
+                z-index: -2;
+            }
+        }
         .all-skills {
             display: flex;
             justify-content: space-between;
@@ -121,6 +141,16 @@ main {
     }
     .contact {
         margin-bottom: 200px;
+        h2 {
+            position: relative;
+            &:after {
+                content: url(/asstets/img/svg-deco.svg);
+                position: absolute;
+                left: -400px;
+                top: -200px;
+                z-index: -2;
+            }
+        }
         .infos-contact {
             margin-top: 50px;
             display: flex;

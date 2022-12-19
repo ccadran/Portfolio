@@ -54,12 +54,19 @@ nav ul li:hover {
 .hero-container {
   margin-top: 200px;
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .hero-container h1 {
   width: 60%;
   font-family: barracuda-bold, serif;
   font-size: 120px;
+}
+.hero-container h1:after {
+  content: url(/asstets/img/svg-deco.svg);
+  position: absolute;
+  left: -300px;
+  top: -100px;
+  z-index: -2;
 }
 .hero-container .presentation {
   width: 40%;
@@ -125,6 +132,14 @@ main .tools {
 main .tools h2 {
   font-size: 100px;
   font-family: barracuda-bold, serif;
+  position: relative;
+}
+main .tools h2:after {
+  content: url(/asstets/img/svg-deco.svg);
+  position: absolute;
+  left: -600px;
+  top: -500px;
+  z-index: -2;
 }
 main .tools .tools-container ul {
   display: flex;

@@ -15,7 +15,8 @@
 }
 
 body {
-  margin: 0 60px;
+  padding: 0 60px;
+  position: relative;
   background: #000;
   color: #fff;
 }
@@ -73,9 +74,16 @@ nav ul li:hover {
   text-align: right;
   padding-left: 50px;
 }
+.hero-container h3:after {
+  content: url(/asstets/img/svg-deco.svg);
+  position: absolute;
+  right: 0;
+  top: 100px;
+  z-index: -2;
+}
 
 main {
-  margin: 0 60px;
+  padding: 0 60px;
 }
 main .about-me {
   margin-top: 200px;
@@ -103,6 +111,16 @@ main .about-me .about-me-container p {
 }
 main .projects {
   margin-top: 200px;
+}
+main .projects h2 {
+  position: relative;
+}
+main .projects h2:after {
+  content: url(/asstets/img/svg-deco.svg);
+  position: absolute;
+  left: -450px;
+  top: -400px;
+  z-index: -2;
 }
 main .projects p {
   margin-top: 50px;
@@ -146,6 +164,16 @@ main .projects #other-project {
 }
 main .skills {
   margin-top: 200px;
+}
+main .skills h2 {
+  position: relative;
+}
+main .skills h2:after {
+  content: url(/asstets/img/svg-deco.svg);
+  position: absolute;
+  right: -400px;
+  top: -500px;
+  z-index: -2;
 }
 main .skills .all-skills {
   display: flex;
@@ -192,6 +220,16 @@ main .skills .all-skills .skills-container .logo-skills img {
 }
 main .contact {
   margin-bottom: 200px;
+}
+main .contact h2 {
+  position: relative;
+}
+main .contact h2:after {
+  content: url(/asstets/img/svg-deco.svg);
+  position: absolute;
+  left: -400px;
+  top: -200px;
+  z-index: -2;
 }
 main .contact .infos-contact {
   margin-top: 50px;
