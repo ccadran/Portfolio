@@ -8,14 +8,22 @@ main {
             border: 1px solid $white;
             width: 90%;
             margin: 100px auto;
-            padding: 20px 50px;
+            padding: 30px 50px;
+            // background: $black;
+            transform-style: preserve-3d;
+            transform: perspective(2000px);
+
             h3 {
+                display: none;
+                transition: all 0.3s ease-in-out;
                 font-size: 48px;
                 font-family: $barracuda;
                 margin-bottom: 30px;
+                transform: translateZ(50px);
             }
             .content {
                 display: flex;
+                transform: translateZ(50px);
                 .img-container {
                     width: 50%;
                     img {
@@ -29,11 +37,13 @@ main {
                     padding-left: 70px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
+
+                    // justify-content: space-between;
                     p {
                         font-size: 20px;
                     }
                     h4 {
+                        margin-top: 10px;
                         padding: 15px 0;
                         font-family: $satoshi;
                         font-size: 22px;
@@ -41,6 +51,7 @@ main {
                     }
 
                     .view-project {
+                        display: none;
                         width: 150px;
                         padding: 10px 15px;
                         font-family: $barracuda;

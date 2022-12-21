@@ -86,15 +86,21 @@ main .projects .project {
   border: 1px solid #fff;
   width: 90%;
   margin: 100px auto;
-  padding: 20px 50px;
+  padding: 30px 50px;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
 }
 main .projects .project h3 {
+  display: none;
+  transition: all 0.3s ease-in-out;
   font-size: 48px;
   font-family: barracuda-bold, serif;
   margin-bottom: 30px;
+  transform: translateZ(50px);
 }
 main .projects .project .content {
   display: flex;
+  transform: translateZ(50px);
 }
 main .projects .project .content .img-container {
   width: 50%;
@@ -110,18 +116,19 @@ main .projects .project .content .left {
   padding-left: 70px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 main .projects .project .content .left p {
   font-size: 20px;
 }
 main .projects .project .content .left h4 {
+  margin-top: 10px;
   padding: 15px 0;
   font-family: satoshi-regular, sans-serif;
   font-size: 22px;
   font-weight: bold;
 }
 main .projects .project .content .left .view-project {
+  display: none;
   width: 150px;
   padding: 10px 15px;
   font-family: barracuda-bold, serif;
