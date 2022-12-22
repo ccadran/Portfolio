@@ -11,9 +11,16 @@ main {
         display: flex;
         margin: 0 60px;
         justify-content: space-between;
+        height: 100%;
+
         .txt-project {
+            height: 90%;
             width: 40%;
             margin-right: 50px;
+            position: sticky;
+            top: 100px;
+            margin-bottom: 100px;
+
             h4 {
                 font-family: $barracuda;
                 font-size: 22px;

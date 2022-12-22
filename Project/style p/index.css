@@ -102,10 +102,16 @@ main .project-description {
   display: flex;
   margin: 0 60px;
   justify-content: space-between;
+  height: 100%;
 }
 main .project-description .txt-project {
+  height: 90%;
   width: 40%;
   margin-right: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  margin-bottom: 100px;
 }
 main .project-description .txt-project h4 {
   font-family: barracuda-bold, serif;
