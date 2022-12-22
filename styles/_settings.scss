@@ -25,6 +25,7 @@ body {
     position: relative;
     background: $black;
     color: $white;
+    overflow-x: hidden;
 
     p {
         font-family: $satoshi;

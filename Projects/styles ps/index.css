@@ -26,28 +26,39 @@ body p {
 }
 
 nav {
+  position: fixed;
+  height: 99%;
+  width: 95%;
+  top: 10px;
+  transition: 0.2s;
+  z-index: 2;
+}
+nav .nav-container {
+  padding-top: 40px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  align-items: center;
   font-family: barracuda-bold, serif;
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
 }
-nav h4 {
+nav .nav-container h4 {
   font-size: 32px;
   transition: 0.2s;
 }
-nav h4:hover {
+nav .nav-container h4:hover {
   cursor: pointer;
   color: grey;
 }
-nav ul {
+nav .nav-container ul {
   display: flex;
 }
-nav ul li {
+nav .nav-container ul li {
   margin-left: 65px;
   font-size: 24px;
   transition: 0.2s;
 }
-nav ul li:hover {
+nav .nav-container ul li:hover {
   cursor: pointer;
   color: grey;
 }

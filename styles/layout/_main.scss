@@ -85,13 +85,13 @@ main {
         margin-top: 200px;
         h2 {
             position: relative;
-            &:after {
-                content: url(/asstets/img/svg-deco.svg);
-                position: absolute;
-                right: -400px;
-                top: -500px;
-                z-index: -2;
-            }
+            // &:after {
+            //     content: url(/asstets/img/svg-deco.svg);
+            //     position: absolute;
+            //     right: -400px;
+            //     top: -500px;
+            //     z-index: -2;
+            // }
         }
         .all-skills {
             display: flex;

@@ -1,25 +1,40 @@
-nav {
-    font-family: $barracuda;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    h4 {
-        font-size: 32px;
+.hero {
+    // height: 100%;
+
+    nav {
+        position: fixed;
+        height: 99%;
+        width: 95%;
+        top: 10px;
         transition: 0.2s;
-        &:hover {
-            cursor: pointer;
-            color: grey;
-        }
-    }
-    ul {
-        display: flex;
-        li {
-            margin-left: 65px;
-            font-size: 24px;
-            transition: 0.2s;
-            &:hover {
-                cursor: pointer;
-                color: grey;
+        z-index: 2;
+
+        .nav-container {
+            padding-top: 40px;
+            backdrop-filter: blur(5px);
+            align-items: center;
+            font-family: $barracuda;
+            display: flex;
+            justify-content: space-between;
+            h4 {
+                font-size: 32px;
+                transition: 0.2s;
+                &:hover {
+                    cursor: pointer;
+                    color: grey;
+                }
+            }
+            ul {
+                display: flex;
+                li {
+                    margin-left: 65px;
+                    font-size: 24px;
+                    transition: 0.2s;
+                    &:hover {
+                        cursor: pointer;
+                        color: grey;
+                    }
+                }
             }
         }
     }
