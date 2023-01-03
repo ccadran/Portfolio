@@ -29,16 +29,20 @@ body h2 {
   font-size: 96px;
   font-family: barracuda-bold, serif;
 }
+body a {
+  text-decoration: none;
+  color: #fff;
+}
 
-.hero nav {
+nav {
   position: fixed;
-  height: 99%;
+  height: 100px;
   width: 95%;
   top: 10px;
   transition: 0.2s;
   z-index: 2;
 }
-.hero nav .nav-container {
+nav .nav-container {
   padding-top: 40px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -47,23 +51,23 @@ body h2 {
   display: flex;
   justify-content: space-between;
 }
-.hero nav .nav-container h4 {
+nav .nav-container h4 {
   font-size: 32px;
   transition: 0.2s;
 }
-.hero nav .nav-container h4:hover {
+nav .nav-container h4:hover {
   cursor: pointer;
   color: grey;
 }
-.hero nav .nav-container ul {
+nav .nav-container ul {
   display: flex;
 }
-.hero nav .nav-container ul li {
+nav .nav-container ul li {
   margin-left: 65px;
   font-size: 24px;
   transition: 0.2s;
 }
-.hero nav .nav-container ul li:hover {
+nav .nav-container ul li:hover {
   cursor: pointer;
   color: grey;
 }
@@ -146,7 +150,11 @@ main .projects .projects-container {
 main .projects .project {
   display: flex;
   flex-direction: column;
+  transition: 0.2s;
   margin-bottom: 80px;
+}
+main .projects .project:hover {
+  cursor: pointer;
 }
 main .projects .project h5 {
   font-family: barracuda-bold, serif;
@@ -159,10 +167,12 @@ main .projects .project .img-container {
   margin-bottom: 15px;
 }
 main .projects .project .img-container img {
+  transition: 0.2s;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: grayscale(100%);
 }
 main .projects #other-project {
   padding: 15px;

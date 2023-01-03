@@ -30,4 +30,8 @@ body {
         font-family: $satoshi;
         font-size: 24px;
     }
+    a {
+        text-decoration: none;
+        color: $black;
+    }
 }

@@ -50,8 +50,10 @@ main {
         .project {
             display: flex;
             flex-direction: column;
-
-            // margin-right: 90px;
+            transition: 0.2s;
+            &:hover {
+                cursor: pointer;
+            }
             margin-bottom: 80px;
             h5 {
                 font-family: $barracuda;
@@ -64,9 +66,11 @@ main {
                 height: 281px;
                 margin-bottom: 15px;
                 img {
+                    transition: 0.2s;
                     height: 100%;
                     width: 100%;
                     object-fit: cover;
+                    filter: grayscale(100%);
                 }
             }
         }

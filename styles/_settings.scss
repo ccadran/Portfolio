@@ -35,4 +35,8 @@ body {
         font-size: 96px;
         font-family: $barracuda;
     }
+    a {
+        text-decoration: none;
+        color: $white;
+    }
 }

@@ -24,10 +24,14 @@ body p {
   font-family: satoshi-regular, sans-serif;
   font-size: 24px;
 }
+body a {
+  text-decoration: none;
+  color: #000;
+}
 
 nav {
   position: fixed;
-  height: 99%;
+  height: 100px;
   width: 95%;
   top: 10px;
   transition: 0.2s;
