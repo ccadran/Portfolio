@@ -18,6 +18,7 @@ body {
   padding: 0 60px;
   background: #000;
   color: #fff;
+  overflow-x: hidden;
 }
 body p {
   font-family: satoshi-regular, sans-serif;
@@ -25,7 +26,6 @@ body p {
 }
 body a {
   text-decoration: none;
-  color: #fff;
 }
 
 nav {
@@ -45,6 +45,9 @@ nav .nav-container {
   display: flex;
   justify-content: space-between;
 }
+nav .nav-container a {
+  color: #fff;
+}
 nav .nav-container h4 {
   font-size: 32px;
   transition: 0.2s;
@@ -59,9 +62,11 @@ nav .nav-container ul {
 nav .nav-container ul li {
   margin-left: 65px;
   font-size: 24px;
+}
+nav .nav-container ul li a {
   transition: 0.2s;
 }
-nav .nav-container ul li:hover {
+nav .nav-container ul li a:hover {
   cursor: pointer;
   color: grey;
 }
@@ -183,6 +188,9 @@ footer {
   padding: 0 120px;
   color: #000;
 }
+footer a {
+  color: #000;
+}
 footer .main-footer {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -221,6 +229,9 @@ footer .main-footer .footer-contact ul {
 }
 footer .main-footer .footer-contact img {
   width: 70%;
+}
+footer .main-footer .footer-contact li a {
+  color: #000;
 }
 footer .under-footer {
   border-top: 1px solid #000;

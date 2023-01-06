@@ -51,6 +51,7 @@ main {
             display: flex;
             flex-direction: column;
             transition: 0.2s;
+            color: $white;
             &:hover {
                 cursor: pointer;
             }
@@ -83,6 +84,15 @@ main {
             align-items: center;
             display: block;
             margin: 0 auto;
+            transition: 0.2s;
+            a {
+                color: $black;
+            }
+            &:hover {
+                cursor: pointer;
+                font-size: 20px;
+                font-weight: bold;
+            }
         }
     }
     .skills {

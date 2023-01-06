@@ -3,6 +3,9 @@ footer {
     margin: 0 -120px;
     padding: 0 120px;
     color: $black;
+    a {
+        color: $black;
+    }
     .main-footer {
         display: grid;
         grid-template-columns: 60% 40%;
@@ -40,6 +43,11 @@ footer {
             }
             img {
                 width: 70%;
+            }
+            li {
+                a {
+                    color: $black;
+                }
             }
         }
     }

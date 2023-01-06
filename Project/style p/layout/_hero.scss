@@ -13,6 +13,10 @@ nav {
         font-family: $barracuda;
         display: flex;
         justify-content: space-between;
+        a {
+            color: $white;
+        }
+
         h4 {
             font-size: 32px;
             transition: 0.2s;
@@ -26,10 +30,13 @@ nav {
             li {
                 margin-left: 65px;
                 font-size: 24px;
-                transition: 0.2s;
-                &:hover {
-                    cursor: pointer;
-                    color: grey;
+                a {
+                    transition: 0.2s;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: grey;
+                    }
                 }
             }
         }

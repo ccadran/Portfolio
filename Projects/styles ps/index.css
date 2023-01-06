@@ -19,6 +19,7 @@ body {
   background: #000;
   color: #fff;
   position: relative;
+  overflow-x: hidden;
 }
 body p {
   font-family: satoshi-regular, sans-serif;
@@ -26,7 +27,6 @@ body p {
 }
 body a {
   text-decoration: none;
-  color: #000;
 }
 
 nav {
@@ -46,6 +46,9 @@ nav .nav-container {
   display: flex;
   justify-content: space-between;
 }
+nav .nav-container a {
+  color: #fff;
+}
 nav .nav-container h4 {
   font-size: 32px;
   transition: 0.2s;
@@ -60,9 +63,11 @@ nav .nav-container ul {
 nav .nav-container ul li {
   margin-left: 65px;
   font-size: 24px;
+}
+nav .nav-container ul li a {
   transition: 0.2s;
 }
-nav .nav-container ul li:hover {
+nav .nav-container ul li a:hover {
   cursor: pointer;
   color: grey;
 }

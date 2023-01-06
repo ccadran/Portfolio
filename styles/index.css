@@ -31,7 +31,6 @@ body h2 {
 }
 body a {
   text-decoration: none;
-  color: #fff;
 }
 
 nav {
@@ -51,6 +50,9 @@ nav .nav-container {
   display: flex;
   justify-content: space-between;
 }
+nav .nav-container a {
+  color: #fff;
+}
 nav .nav-container h4 {
   font-size: 32px;
   transition: 0.2s;
@@ -65,9 +67,11 @@ nav .nav-container ul {
 nav .nav-container ul li {
   margin-left: 65px;
   font-size: 24px;
+}
+nav .nav-container ul li a {
   transition: 0.2s;
 }
-nav .nav-container ul li:hover {
+nav .nav-container ul li a:hover {
   cursor: pointer;
   color: grey;
 }
@@ -151,6 +155,7 @@ main .projects .project {
   display: flex;
   flex-direction: column;
   transition: 0.2s;
+  color: #fff;
   margin-bottom: 80px;
 }
 main .projects .project:hover {
@@ -183,6 +188,15 @@ main .projects #other-project {
   align-items: center;
   display: block;
   margin: 0 auto;
+  transition: 0.2s;
+}
+main .projects #other-project a {
+  color: #000;
+}
+main .projects #other-project:hover {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
 }
 main .skills {
   margin-top: 200px;
@@ -289,7 +303,10 @@ footer .main-footer .left-footer ul {
 footer .main-footer .left-footer ul li {
   transition: 0.2s;
 }
-footer .main-footer .left-footer ul li:hover {
+footer .main-footer .left-footer ul li a {
+  color: #000;
+}
+footer .main-footer .left-footer ul li a:hover {
   cursor: pointer;
   color: rgb(73, 73, 73);
 }
@@ -309,6 +326,14 @@ footer .main-footer .footer-contact ul {
 }
 footer .main-footer .footer-contact img {
   width: 70%;
+}
+footer .main-footer .footer-contact a {
+  color: #000;
+  transition: 0.2s;
+}
+footer .main-footer .footer-contact a:hover {
+  cursor: pointer;
+  color: rgb(73, 73, 73);
 }
 footer .under-footer {
   border-top: 1px solid #000;
