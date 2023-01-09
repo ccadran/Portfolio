@@ -27,9 +27,12 @@ footer {
                 li {
                     transition: 0.2s;
 
-                    &:hover {
-                        cursor: pointer;
-                        color: rgb(73, 73, 73);
+                    a {
+                        color: $black;
+                        &:hover {
+                            cursor: pointer;
+                            color: rgb(73, 73, 73);
+                        }
                     }
                 }
             }

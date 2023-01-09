@@ -154,6 +154,9 @@ main .projects .project .content .left .view-project {
   font-family: barracuda-bold, serif;
   font-size: 18px;
 }
+main .projects .project .content .left .view-project a {
+  color: #000;
+}
 
 footer {
   background: #fff;
@@ -187,7 +190,10 @@ footer .main-footer .left-footer ul {
 footer .main-footer .left-footer ul li {
   transition: 0.2s;
 }
-footer .main-footer .left-footer ul li:hover {
+footer .main-footer .left-footer ul li a {
+  color: #000;
+}
+footer .main-footer .left-footer ul li a:hover {
   cursor: pointer;
   color: rgb(73, 73, 73);
 }
