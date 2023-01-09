@@ -109,6 +109,9 @@ nav .nav-container ul li a:hover {
   font-family: barracuda-bold, serif;
   font-size: 18px;
 }
+.hero-container .presentation .view-project a {
+  color: #000;
+}
 
 main .cover {
   max-width: 2100px;
