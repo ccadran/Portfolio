@@ -40,11 +40,12 @@ main {
 
         p {
             margin-top: 50px;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
         }
         .projects-container {
             display: grid;
             grid-template-columns: 50% 50%;
+            gap: 75px;
             justify-items: center;
         }
         .project {
@@ -55,16 +56,15 @@ main {
             &:hover {
                 cursor: pointer;
             }
-            margin-bottom: 80px;
+            margin-bottom: 0px;
             h5 {
                 font-family: $barracuda;
                 font-size: 32px;
                 margin-bottom: 10px;
             }
-
             .img-container {
-                width: 500px;
-                height: 281px;
+                width: 100%;
+                height: 100%;
                 margin-bottom: 15px;
                 img {
                     transition: 0.2s;

@@ -144,11 +144,12 @@ main .projects h2:after {
 }
 main .projects p {
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 main .projects .projects-container {
   display: grid;
   grid-template-columns: 50% 50%;
+  gap: 75px;
   justify-items: center;
 }
 main .projects .project {
@@ -156,7 +157,7 @@ main .projects .project {
   flex-direction: column;
   transition: 0.2s;
   color: #fff;
-  margin-bottom: 80px;
+  margin-bottom: 0px;
 }
 main .projects .project:hover {
   cursor: pointer;
@@ -167,8 +168,8 @@ main .projects .project h5 {
   margin-bottom: 10px;
 }
 main .projects .project .img-container {
-  width: 500px;
-  height: 281px;
+  width: 100%;
+  height: 100%;
   margin-bottom: 15px;
 }
 main .projects .project .img-container img {
