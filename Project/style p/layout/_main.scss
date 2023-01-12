@@ -71,6 +71,9 @@ main {
                 padding: 10px 15px;
                 font-family: $barracuda;
                 font-size: 18px;
+                a {
+                    color: $black;
+                }
             }
         }
     }

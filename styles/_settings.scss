@@ -21,19 +21,34 @@ $white: #fff;
 }
 
 body {
-    padding: 0 60px;
     position: relative;
     background: $black;
     color: $white;
     overflow-x: hidden;
+    .hero,
+    main {
+        padding: 0 60px;
+    }
 
     p {
         font-family: $satoshi;
-        font-size: 24px;
+        font-size: 20px;
+        @media screen and (max-width: 567px) {
+            font-size: 16px;
+        }
     }
     h2 {
         font-size: 96px;
         font-family: $barracuda;
+        @media screen and (max-width: 967px) {
+            font-size: 76px;
+        }
+        @media screen and (max-width: 567px) {
+            font-size: 56px;
+        }
+        @media screen and (max-width: 450px) {
+            font-size: 40px;
+        }
     }
     a {
         text-decoration: none;
