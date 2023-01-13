@@ -5,6 +5,10 @@ nav {
     top: 10px;
     transition: 0.2s;
     z-index: 2;
+    display: none;
+    @media screen and (max-width: 1300px) {
+        display: none;
+    }
 
     .nav-container {
         padding-top: 40px;
@@ -47,15 +51,28 @@ nav {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+        align-items: start;
+    }
     h1 {
         font-family: $barracuda;
         font-size: 160px;
+        @media screen and (max-width: 1023px) {
+            font-size: 130px;
+        }
     }
     p {
         width: 50%;
         font-size: 24px;
         margin-bottom: -50px;
         text-align: left;
+        @media screen and (max-width: 1171px) {
+            font-size: 22px;
+        }
+        @media screen and (max-width: 900px) {
+            margin-left: auto;
+        }
         &:after {
             content: url(/asstets/img/svg-deco.svg);
             position: absolute;

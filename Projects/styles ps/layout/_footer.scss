@@ -1,34 +1,44 @@
 footer {
     background: $white;
-    margin-top: 150px;
     padding: 0 60px;
     color: $black;
-    position: relative;
-    &:before {
-        content: url(/asstets/img/svg-deco.svg);
-        position: absolute;
-        left: -300px;
-        top: -100%;
-        z-index: -2;
-    }
+
     .main-footer {
         display: grid;
         grid-template-columns: 60% 40%;
         padding: 80px 0;
+        @media screen and (max-width: 671px) {
+            display: flex;
+            flex-direction: column;
+        }
+        @media screen and (max-width: 537px) {
+            padding: 40px 0;
+        }
+
         .left-footer {
             font-family: $barracuda;
             font-size: 28px;
             width: 80%;
+            @media screen and (max-width: 671px) {
+                margin-bottom: 25px;
+                width: 100%;
+            }
 
             ul {
                 display: flex;
-                justify-content: space-between;
+
+                flex-wrap: wrap;
                 margin-bottom: 70px;
                 li {
                     transition: 0.2s;
+                    margin-bottom: 20px;
+                    margin-right: 20px;
 
                     a {
                         color: $black;
+                        @media screen and (max-width: 537px) {
+                            font-size: 20px;
+                        }
                         &:hover {
                             cursor: pointer;
                             color: rgb(73, 73, 73);
@@ -41,17 +51,44 @@ footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @media screen and (max-width: 1275px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
             p {
                 font-family: $barracuda;
                 font-size: 28px;
+                @media screen and (max-width: 537px) {
+                    font-size: 20px;
+                }
             }
             ul {
                 margin-left: 30px;
                 margin-bottom: 0;
                 width: 50%;
+                @media screen and (max-width: 1275px) {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
             }
             img {
                 width: 70%;
+            }
+            a {
+                color: $black;
+                transition: 0.2s;
+                @media screen and (max-width: 967px) {
+                    margin-bottom: 20px;
+                }
+                @media screen and (max-width: 537px) {
+                    font-size: 20px;
+                }
+                &:hover {
+                    cursor: pointer;
+                    color: rgb(73, 73, 73);
+                }
             }
         }
     }
@@ -71,6 +108,10 @@ footer {
             font-size: 24px;
             background: $white;
             border: 1px solid $black;
+            @media screen and (max-width: 967px) {
+                font-size: 18px;
+                padding: 7px 12px;
+            }
         }
         p {
             font-family: $satoshi;
