@@ -25,9 +25,14 @@ body {
     background: $black;
     color: $white;
     overflow-x: hidden;
+
     .hero,
     main {
         padding: 0 60px;
+    }
+    main {
+        max-width: 1600px;
+        margin: 0 auto;
     }
 
     p {

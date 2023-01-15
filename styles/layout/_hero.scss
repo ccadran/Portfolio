@@ -54,6 +54,7 @@ nav {
     @media screen and (max-width: 757px) {
         flex-direction: column;
         align-items: start;
+        padding: 100px 0;
     }
 
     h1 {
@@ -75,7 +76,7 @@ nav {
     h3 {
         font-family: $barracuda;
         font-size: 64px;
-        padding-right: 50px;
+        margin-right: 50px;
         margin-bottom: -50px;
         text-align: right;
         padding-left: 50px;

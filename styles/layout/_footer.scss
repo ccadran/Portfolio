@@ -1,12 +1,13 @@
 footer {
     background: $white;
-    padding: 0 60px;
     color: $black;
 
     .main-footer {
         display: grid;
         grid-template-columns: 60% 40%;
-        padding: 80px 0;
+        padding: 80px 60px;
+        max-width: 1600px;
+        margin: 0 auto;
         @media screen and (max-width: 671px) {
             display: flex;
             flex-direction: column;
@@ -26,19 +27,27 @@ footer {
 
             ul {
                 display: flex;
+                width: 95%;
 
                 flex-wrap: wrap;
                 margin-bottom: 70px;
+
+                @media screen and (max-width: 666px) {
+                    justify-content: center;
+                    width: 95%;
+                    margin: 0 auto 70px auto;
+                }
                 li {
                     transition: 0.2s;
                     margin-bottom: 20px;
-                    margin-right: 20px;
+                    margin: 0 10px;
 
                     a {
                         color: $black;
                         @media screen and (max-width: 537px) {
                             font-size: 20px;
                         }
+
                         &:hover {
                             cursor: pointer;
                             color: rgb(73, 73, 73);
@@ -47,6 +56,7 @@ footer {
                 }
             }
         }
+
         .footer-contact {
             display: flex;
             justify-content: space-between;
@@ -55,28 +65,30 @@ footer {
                 flex-direction: column;
                 align-items: flex-start;
             }
-
-            p {
-                font-family: $barracuda;
-                font-size: 28px;
-                @media screen and (max-width: 537px) {
-                    font-size: 20px;
+            @media screen and (max-width: 666px) {
+                justify-content: center !important;
+            }
+            #mail {
+                @media screen and (max-width: 666px) {
+                    text-align: center;
+                    width: 100%;
                 }
             }
             ul {
-                margin-left: 30px;
+                margin: 20px auto;
                 margin-bottom: 0;
+                justify-content: center;
                 width: 50%;
                 @media screen and (max-width: 1275px) {
-                    width: 100%;
-                    margin-left: 0;
-                    margin-top: 20px;
+                    width: 90%;
                 }
             }
             img {
                 width: 70%;
             }
             a {
+                display: flex;
+                justify-content: center;
                 color: $black;
                 transition: 0.2s;
                 @media screen and (max-width: 967px) {
@@ -85,6 +97,7 @@ footer {
                 @media screen and (max-width: 537px) {
                     font-size: 20px;
                 }
+
                 &:hover {
                     cursor: pointer;
                     color: rgb(73, 73, 73);
@@ -92,10 +105,15 @@ footer {
             }
         }
     }
+    .right-footer {
+        @media screen and (max-width: 666px) {
+            text-align: center;
+        }
+    }
     .under-footer {
         border-top: 1px solid #000;
-        margin: 0 -120px;
-        padding: 40px 0;
+        padding: 20px 0;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -103,19 +121,25 @@ footer {
         #legal {
             width: 250px;
             margin-bottom: 20px;
-            padding: 10px 15px;
+            padding: 8px 5px;
             font-family: $barracuda;
-            font-size: 24px;
+            font-size: 20px;
             background: $white;
             border: 1px solid $black;
-            @media screen and (max-width: 967px) {
-                font-size: 18px;
+            @media screen and (max-width: 537px) {
+                font-size: 14px;
                 padding: 7px 12px;
+                width: 150px;
             }
         }
+
         p {
             font-family: $satoshi;
             font-weight: bold;
+            font-size: 12px;
+            @media screen and (max-width: 537px) {
+                font-size: 10px;
+            }
         }
     }
 }

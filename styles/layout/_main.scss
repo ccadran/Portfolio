@@ -55,6 +55,9 @@ main {
                 left: -450px;
                 top: -400px;
                 z-index: -2;
+                @media screen and (max-width: 666px) {
+                    content: "";
+                }
             }
         }
 
@@ -212,6 +215,9 @@ main {
                 left: -400px;
                 top: -200px;
                 z-index: -2;
+                @media screen and (max-width: 666px) {
+                    content: "";
+                }
             }
         }
         .infos-contact {
