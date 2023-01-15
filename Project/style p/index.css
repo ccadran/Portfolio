@@ -23,6 +23,10 @@ body .hero,
 body main {
   padding: 0 60px;
 }
+body main {
+  max-width: 1600px;
+  margin: 0 auto;
+}
 body p {
   font-family: satoshi-regular, sans-serif;
   font-size: 20px;

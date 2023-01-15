@@ -28,7 +28,10 @@ body {
     main {
         padding: 0 60px;
     }
-
+    main {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
     p {
         font-family: $satoshi;
         font-size: 20px;
