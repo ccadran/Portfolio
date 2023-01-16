@@ -43,6 +43,11 @@ nav {
   transition: 0.2s;
   z-index: 2;
 }
+@media screen and (max-width: 1450px) {
+  nav {
+    display: none;
+  }
+}
 nav .nav-container {
   padding-top: 40px;
   -webkit-backdrop-filter: blur(5px);
@@ -83,10 +88,42 @@ nav .nav-container ul li a:hover {
   display: flex;
   margin-bottom: 200px;
 }
+@media screen and (max-width: 707px) {
+  .hero-container {
+    margin: 100px 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: start;
+  }
+}
 .hero-container h1 {
   width: 60%;
   font-family: barracuda-bold, serif;
-  font-size: 120px;
+  font-size: 110px;
+}
+@media screen and (max-width: 1100px) {
+  .hero-container h1 {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .hero-container h1 {
+    align-items: start;
+  }
+}
+@media screen and (max-width: 707px) {
+  .hero-container h1 {
+    width: 100%;
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero-container h1 {
+    font-size: 60px;
+  }
 }
 .hero-container h1:after {
   content: url(/asstets/img/svg-deco.svg);
@@ -95,10 +132,28 @@ nav .nav-container ul li a:hover {
   top: -100px;
   z-index: -2;
 }
+@media screen and (max-width: 707px) {
+  .hero-container h1:after {
+    content: "";
+  }
+}
 .hero-container .presentation {
   width: 40%;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 1023px) {
+  .hero-container .presentation {
+    margin-left: auto;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 707px) {
+  .hero-container .presentation {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 30px;
+  }
 }
 .hero-container .presentation h4 {
   padding: 15px 0;
@@ -124,6 +179,16 @@ main .cover {
   max-width: 2100px;
   margin: 100px auto 200px auto;
 }
+@media screen and (max-width: 1023px) {
+  main .cover {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 707px) {
+  main .cover {
+    margin-bottom: 50px;
+  }
+}
 main .cover img {
   width: 100%;
   height: 100%;
@@ -134,6 +199,16 @@ main .project-description {
   justify-content: space-between;
   height: 100%;
 }
+@media screen and (max-width: 1023px) {
+  main .project-description {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 707px) {
+  main .project-description {
+    margin: 0;
+  }
+}
 main .project-description .txt-project {
   height: 90%;
   width: 40%;
@@ -143,16 +218,38 @@ main .project-description .txt-project {
   top: 100px;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 1023px) {
+  main .project-description .txt-project {
+    position: relative;
+    width: 100%;
+  }
+}
 main .project-description .txt-project h4 {
   font-family: barracuda-bold, serif;
-  font-size: 22px;
+  font-size: 26px;
   margin-bottom: 40px;
 }
 main .project-description .txt-project p {
   font-size: 24px;
 }
+@media screen and (max-width: 1023px) {
+  main .project-description .txt-project p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 707px) {
+  main .project-description .txt-project p {
+    font-size: 18px;
+  }
+}
 main .project-description .img-project {
   width: 50%;
+}
+@media screen and (max-width: 1023px) {
+  main .project-description .img-project {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 main .project-description .img-project .img-container {
   width: 100%;
@@ -165,10 +262,35 @@ main .project-description .img-project .img-container img {
 main .tools {
   margin: 100px 60px 200px 60px;
 }
+@media screen and (max-width: 707px) {
+  main .tools {
+    margin: 100px 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .tools {
+    margin: 50px 0 100px 0;
+  }
+}
 main .tools h2 {
   font-size: 100px;
   font-family: barracuda-bold, serif;
   position: relative;
+}
+@media screen and (max-width: 1023px) {
+  main .tools h2 {
+    font-size: 76px;
+  }
+}
+@media screen and (max-width: 567px) {
+  main .tools h2 {
+    font-size: 56px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .tools h2 {
+    font-size: 40px;
+  }
 }
 main .tools h2:after {
   content: url(/asstets/img/svg-deco.svg);
@@ -177,12 +299,37 @@ main .tools h2:after {
   top: -500px;
   z-index: -2;
 }
+@media screen and (max-width: 465px) {
+  main .tools h2:after {
+    content: "";
+  }
+}
 main .tools .tools-container ul {
   display: flex;
   margin: 50px 0;
 }
 main .tools .tools-container ul li {
   margin-right: 30px;
+}
+@media screen and (max-width: 707px) {
+  main .tools .tools-container ul li {
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  main .tools .tools-container ul li img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  main .tools .tools-container p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 707px) {
+  main .tools .tools-container p {
+    font-size: 18px;
+  }
 }
 main .tools .tools-container .view-project {
   margin-top: 50px;

@@ -5,6 +5,9 @@ nav {
     top: 10px;
     transition: 0.2s;
     z-index: 2;
+    @media screen and (max-width: 1450px) {
+        display: none;
+    }
 
     .nav-container {
         padding-top: 40px;
@@ -46,22 +49,55 @@ nav {
     margin-top: 200px;
     display: flex;
     margin-bottom: 200px;
+    @media screen and (max-width: 707px) {
+        margin: 100px 0;
+    }
+    @media screen and (max-width: 1023px) {
+        flex-direction: column;
+        align-items: start;
+    }
     h1 {
         width: 60%;
         font-family: $barracuda;
-        font-size: 120px;
+        font-size: 110px;
+        @media screen and (max-width: 1100px) {
+            font-size: 100px;
+        }
+        @media screen and (max-width: 1023px) {
+            align-items: start;
+        }
+        @media screen and (max-width: 707px) {
+            width: 100%;
+            font-size: 80px;
+        }
+        @media screen and (max-width: 480px) {
+            font-size: 60px;
+        }
         &:after {
             content: url(/asstets/img/svg-deco.svg);
             position: absolute;
             left: -300px;
             top: -100px;
             z-index: -2;
+            @media screen and (max-width: 707px) {
+                content: "";
+            }
         }
     }
     .presentation {
         width: 40%;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 1023px) {
+            margin-left: auto;
+            width: 60%;
+        }
+        @media screen and (max-width: 707px) {
+            margin-left: 0;
+            width: 100%;
+            margin-top: 30px;
+        }
+
         h4 {
             padding: 15px 0;
             font-family: $satoshi;
