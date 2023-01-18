@@ -5,8 +5,12 @@ nav {
     top: 10px;
     transition: 0.2s;
     z-index: 2;
-    @media screen and (max-width: 1300px) {
-        display: none;
+    left: 20px;
+    right: 20px;
+    margin: 0 auto;
+    @media screen and (max-width: 1023px) {
+        left: 0;
+        width: 100%;
     }
 
     .nav-container {
@@ -23,6 +27,10 @@ nav {
         h4 {
             font-size: 32px;
             transition: 0.2s;
+            z-index: 2;
+            @media screen and (max-width: 1023px) {
+                padding-left: 20px;
+            }
             &:hover {
                 cursor: pointer;
                 color: grey;
@@ -30,6 +38,10 @@ nav {
         }
         ul {
             display: flex;
+            transition: 0.2s;
+            @media screen and (max-width: 1023px) {
+                display: none;
+            }
             li {
                 margin-left: 65px;
                 font-size: 24px;
@@ -43,6 +55,59 @@ nav {
                 }
             }
         }
+        ul.active {
+            transform: translateY(0);
+            position: absolute;
+            top: 0;
+            height: 0;
+            width: 0;
+            display: flex;
+            background: rgb(0, 0, 0);
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            li {
+                margin-bottom: 50px;
+                margin-left: 0;
+                font-size: 30px;
+            }
+        }
+
+        #btn {
+            display: block;
+            position: fixed;
+            top: 40px;
+            right: 30px;
+            transition: 0.3s;
+            span {
+                height: 5px;
+                width: 30px;
+                background: white;
+                display: flex;
+                margin-top: 5px;
+                transition: 0.3s ease;
+            }
+            @media screen and (min-width: 1023px) {
+                display: none;
+            }
+        }
+        #btn.active {
+            span {
+                background: white;
+                position: absolute;
+                right: 0;
+
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:nth-child(3) {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
     }
 }
 .hero-container {
@@ -50,6 +115,7 @@ nav {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    margin: 0 auto;
     @media screen and (max-width: 900px) {
         flex-direction: column;
         align-items: start;

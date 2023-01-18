@@ -67,10 +67,14 @@ nav {
   top: 10px;
   transition: 0.2s;
   z-index: 2;
+  left: 20px;
+  right: 20px;
+  margin: 0 auto;
 }
-@media screen and (max-width: 967px) {
+@media screen and (max-width: 1023px) {
   nav {
-    display: none;
+    left: 0;
+    width: 100%;
   }
 }
 nav .nav-container {
@@ -88,6 +92,12 @@ nav .nav-container a {
 nav .nav-container h4 {
   font-size: 32px;
   transition: 0.2s;
+  z-index: 2;
+}
+@media screen and (max-width: 1023px) {
+  nav .nav-container h4 {
+    padding-left: 20px;
+  }
 }
 nav .nav-container h4:hover {
   cursor: pointer;
@@ -95,6 +105,12 @@ nav .nav-container h4:hover {
 }
 nav .nav-container ul {
   display: flex;
+  transition: 0.2s;
+}
+@media screen and (max-width: 1023px) {
+  nav .nav-container ul {
+    display: none;
+  }
 }
 nav .nav-container ul li {
   margin-left: 65px;
@@ -107,12 +123,65 @@ nav .nav-container ul li a:hover {
   cursor: pointer;
   color: grey;
 }
+nav .nav-container ul.active {
+  transform: translateY(0);
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 0;
+  display: flex;
+  background: rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+nav .nav-container ul.active li {
+  margin-bottom: 50px;
+  margin-left: 0;
+  font-size: 30px;
+}
+nav .nav-container #btn {
+  display: block;
+  position: fixed;
+  top: 40px;
+  right: 30px;
+  transition: 0.3s;
+}
+nav .nav-container #btn span {
+  height: 5px;
+  width: 30px;
+  background: white;
+  display: flex;
+  margin-top: 5px;
+  transition: 0.3s ease;
+}
+@media screen and (min-width: 1023px) {
+  nav .nav-container #btn {
+    display: none;
+  }
+}
+nav .nav-container #btn.active span {
+  background: white;
+  position: absolute;
+  right: 0;
+}
+nav .nav-container #btn.active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+nav .nav-container #btn.active span:nth-child(2) {
+  opacity: 0;
+}
+nav .nav-container #btn.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
 
 .hero-container {
   padding: 200px 0;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 757px) {
   .hero-container {
