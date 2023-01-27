@@ -234,9 +234,15 @@ nav .nav-container #btn.active span:nth-child(3) {
 }
 .hero-container .presentation .view-project {
   width: 150px;
-  padding: 10px 15px;
+  padding: 15px;
   font-family: barracuda-bold, serif;
   font-size: 18px;
+  transition: 0.2s;
+}
+.hero-container .presentation .view-project:hover {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
 }
 .hero-container .presentation .view-project a {
   color: #000;
@@ -401,9 +407,15 @@ main .tools .tools-container ul li {
 main .tools .tools-container .view-project {
   margin-top: 50px;
   width: 150px;
-  padding: 10px 15px;
+  padding: 15px;
   font-family: barracuda-bold, serif;
   font-size: 18px;
+  transition: 0.2s;
+}
+main .tools .tools-container .view-project:hover {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
 }
 main .tools .tools-container .view-project a {
   color: #000;
