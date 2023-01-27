@@ -2,6 +2,8 @@ const skillsContainers = document.querySelectorAll(".skills-container");
 const btnBurger = document.getElementById("btn");
 const navUl = document.querySelector(".nav-container ul");
 const body = document.querySelector("body");
+const mouses = document.querySelectorAll(".mouse");
+
 function skillsHover() {
     Array.prototype.forEach.call(skillsContainers, (container) => {
         container.addEventListener("mouseenter", () => {
