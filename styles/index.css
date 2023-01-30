@@ -691,6 +691,9 @@ footer .under-footer #legal {
     width: 150px;
   }
 }
+footer .under-footer #legal a {
+  color: #000;
+}
 footer .under-footer p {
   font-family: satoshi-regular, sans-serif;
   font-weight: bold;

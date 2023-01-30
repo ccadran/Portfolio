@@ -15,6 +15,7 @@
 }
 
 body {
+  position: relative;
   background: #000;
   color: #fff;
   overflow-x: hidden;
@@ -30,6 +31,30 @@ body main {
 body p {
   font-family: satoshi-regular, sans-serif;
   font-size: 20px;
+}
+@media screen and (max-width: 567px) {
+  body p {
+    font-size: 16px;
+  }
+}
+body h2 {
+  font-size: 96px;
+  font-family: barracuda-bold, serif;
+}
+@media screen and (max-width: 967px) {
+  body h2 {
+    font-size: 76px;
+  }
+}
+@media screen and (max-width: 567px) {
+  body h2 {
+    font-size: 56px;
+  }
+}
+@media screen and (max-width: 450px) {
+  body h2 {
+    font-size: 40px;
+  }
 }
 body a {
   text-decoration: none;
@@ -151,274 +176,91 @@ nav .nav-container #btn.active span:nth-child(3) {
 }
 
 .hero-container {
+  padding: 200px 0;
   display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
   max-width: 1600px;
-  margin: 200px auto;
+  margin: 0 auto;
 }
-@media screen and (max-width: 707px) {
-  .hero-container {
-    margin: 100px 0;
-  }
-}
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 757px) {
   .hero-container {
     flex-direction: column;
     align-items: start;
+    padding: 100px 0;
   }
 }
 .hero-container h1 {
-  width: 60%;
   font-family: barracuda-bold, serif;
-  font-size: 110px;
-}
-@media screen and (max-width: 1100px) {
-  .hero-container h1 {
-    font-size: 100px;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .hero-container h1 {
-    align-items: start;
-  }
-}
-@media screen and (max-width: 707px) {
-  .hero-container h1 {
-    width: 100%;
-    font-size: 80px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hero-container h1 {
-    font-size: 60px;
-  }
+  font-size: 130px;
 }
 .hero-container h1:after {
   content: url(/asstets/img/svg-deco.svg);
   position: absolute;
-  left: -300px;
-  top: -100px;
+  right: 0;
+  top: 100px;
   z-index: -2;
 }
-@media screen and (max-width: 707px) {
-  .hero-container h1:after {
-    content: "";
+@media screen and (max-width: 967px) {
+  .hero-container h1 {
+    font-size: 100px;
   }
 }
-.hero-container .presentation {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (max-width: 1023px) {
-  .hero-container .presentation {
-    margin-left: auto;
-    width: 60%;
-  }
-}
-@media screen and (max-width: 707px) {
-  .hero-container .presentation {
-    margin-left: 0;
-    width: 100%;
-    margin-top: 30px;
-  }
-}
-.hero-container .presentation h4 {
-  padding: 15px 0;
-  font-family: satoshi-regular, sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-}
-.hero-container .presentation p {
-  font-size: 20px;
-  margin: 50px 0;
-}
-.hero-container .presentation .view-project {
-  width: 150px;
-  padding: 15px;
-  font-family: barracuda-bold, serif;
-  font-size: 18px;
-  transition: 0.2s;
-}
-.hero-container .presentation .view-project:hover {
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-}
-.hero-container .presentation .view-project a {
-  color: #000;
-}
-
-main .cover {
-  max-width: 2100px;
-  margin: 100px auto 200px auto;
-}
-@media screen and (max-width: 1023px) {
-  main .cover {
-    margin-bottom: 100px;
-  }
-}
-@media screen and (max-width: 707px) {
-  main .cover {
-    margin-bottom: 50px;
-  }
-}
-main .cover img {
-  width: 100%;
-  height: 100%;
-}
-main .project-description {
-  display: flex;
-  margin: 0 60px;
-  justify-content: space-between;
-  height: 100%;
-}
-@media screen and (max-width: 1023px) {
-  main .project-description {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 707px) {
-  main .project-description {
-    margin: 0;
-  }
-}
-main .project-description .txt-project {
-  height: 90%;
-  width: 40%;
-  margin-right: 50px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 100px;
-  margin-bottom: 100px;
-}
-@media screen and (max-width: 1023px) {
-  main .project-description .txt-project {
-    position: relative;
-    width: 100%;
-  }
-}
-main .project-description .txt-project h4 {
-  font-family: barracuda-bold, serif;
-  font-size: 26px;
-  margin-bottom: 40px;
-}
-main .project-description .txt-project p {
-  font-size: 24px;
-}
-@media screen and (max-width: 1023px) {
-  main .project-description .txt-project p {
-    font-size: 22px;
-  }
-}
-@media screen and (max-width: 707px) {
-  main .project-description .txt-project p {
-    font-size: 18px;
-  }
-}
-main .project-description .img-project {
-  width: 50%;
-}
-@media screen and (max-width: 1023px) {
-  main .project-description .img-project {
-    width: 100%;
-    margin-top: 20px;
-  }
-}
-main .project-description .img-project .img-container {
-  width: 100%;
-  margin-bottom: 100px;
-}
-main .project-description .img-project .img-container img {
-  width: 100%;
-  height: 100%;
-}
-main .tools {
-  margin: 100px 60px 200px 60px;
-}
-@media screen and (max-width: 707px) {
-  main .tools {
-    margin: 100px 0;
-  }
-}
-@media screen and (max-width: 500px) {
-  main .tools {
-    margin: 50px 0 100px 0;
-  }
-}
-main .tools h2 {
-  font-size: 100px;
-  font-family: barracuda-bold, serif;
-  position: relative;
-}
-@media screen and (max-width: 1023px) {
-  main .tools h2 {
-    font-size: 76px;
-  }
-}
-@media screen and (max-width: 567px) {
-  main .tools h2 {
-    font-size: 56px;
+@media screen and (max-width: 537px) {
+  .hero-container h1 {
+    font-size: 80px;
   }
 }
 @media screen and (max-width: 450px) {
-  main .tools h2 {
+  .hero-container h1 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 757px) {
+  .hero-container h1 {
+    margin-bottom: 30px;
+  }
+}
+
+main h2 {
+  font-size: 60px;
+}
+@media screen and (max-width: 500px) {
+  main h2 {
     font-size: 40px;
   }
 }
-main .tools h2:after {
-  content: url(/asstets/img/svg-deco.svg);
-  position: absolute;
-  left: -600px;
-  top: -500px;
-  z-index: -2;
+main .proprio {
+  margin-bottom: 50px;
 }
-@media screen and (max-width: 465px) {
-  main .tools h2:after {
-    content: "";
+main .proprio h2 {
+  margin-bottom: 20px;
+}
+main .proprio h4 {
+  font-family: satoshi-regular, sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 500px) {
+  main .proprio h4 {
+    font-size: 30px;
   }
 }
-main .tools .tools-container ul {
-  display: flex;
-  margin: 50px 0;
+main .hebergeur {
+  margin-bottom: 200px;
 }
-main .tools .tools-container ul li {
-  margin-right: 30px;
+main .hebergeur h2 {
+  margin-bottom: 20px;
 }
-@media screen and (max-width: 707px) {
-  main .tools .tools-container ul li {
-    margin-right: 15px;
+main .hebergeur h4 {
+  font-family: satoshi-regular, sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 500px) {
+  main .hebergeur h4 {
+    font-size: 30px;
   }
-}
-@media screen and (max-width: 1023px) {
-  main .tools .tools-container ul li img {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 1023px) {
-  main .tools .tools-container p {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 707px) {
-  main .tools .tools-container p {
-    font-size: 18px;
-  }
-}
-main .tools .tools-container .view-project {
-  margin-top: 50px;
-  width: 150px;
-  padding: 15px;
-  font-family: barracuda-bold, serif;
-  font-size: 18px;
-  transition: 0.2s;
-}
-main .tools .tools-container .view-project:hover {
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-}
-main .tools .tools-container .view-project a {
-  color: #000;
 }
 
 footer {
@@ -569,9 +411,6 @@ footer .under-footer #legal {
     padding: 7px 12px;
     width: 150px;
   }
-}
-footer .under-footer #legal a {
-  color: #000;
 }
 footer .under-footer p {
   font-family: satoshi-regular, sans-serif;

@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "barracuda-bold";
+    src: url(/asstets/fonts/Barracuda-Bold.ttf);
+}
+@font-face {
+    font-family: "satoshi-regular";
+    src: url(/asstets/fonts/Satoshi-Regular.otf);
+}
+
+$barracuda: barracuda-bold, serif;
+$satoshi: satoshi-regular, sans-serif;
+$black: #000;
+$white: #fff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+body {
+    position: relative;
+    background: $black;
+    color: $white;
+    overflow-x: hidden;
+
+    .hero,
+    main {
+        padding: 0 60px;
+    }
+    main {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    p {
+        font-family: $satoshi;
+        font-size: 20px;
+        @media screen and (max-width: 567px) {
+            font-size: 16px;
+        }
+    }
+    h2 {
+        font-size: 96px;
+        font-family: $barracuda;
+        @media screen and (max-width: 967px) {
+            font-size: 76px;
+        }
+        @media screen and (max-width: 567px) {
+            font-size: 56px;
+        }
+        @media screen and (max-width: 450px) {
+            font-size: 40px;
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+}
