@@ -3,6 +3,8 @@ const btnBurger = document.getElementById("btn");
 const navUl = document.querySelector(".nav-container ul");
 const body = document.querySelector("body");
 const mouses = document.querySelectorAll(".mouse");
+const burgerChilds = document.querySelectorAll(".burger-child");
+console.log(burgerChilds);
 
 function skillsHover() {
     Array.prototype.forEach.call(skillsContainers, (container) => {
@@ -77,6 +79,16 @@ btnBurger.addEventListener("click", () => {
     } else {
         body.style = "overflow:scroll";
     }
+});
+burgerChilds.forEach((child) => {
+    if (
+        child.addEventListener("click", () => {
+            console.log("test");
+            btnBurger.classList.remove("active");
+            navUl.classList.remove("active");
+            nav.classList.remove("active");
+        })
+    );
 });
 
 function btnBurgerOnScroll() {

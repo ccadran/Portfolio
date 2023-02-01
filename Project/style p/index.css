@@ -31,6 +31,11 @@ body p {
   font-family: satoshi-regular, sans-serif;
   font-size: 20px;
 }
+@media screen and (max-width: 567px) {
+  body p {
+    font-size: 16px;
+  }
+}
 body a {
   text-decoration: none;
 }
