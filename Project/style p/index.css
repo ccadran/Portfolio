@@ -291,7 +291,6 @@ main .project-description .txt-project {
   height: 90%;
   width: 40%;
   margin-right: 50px;
-  position: -webkit-sticky;
   position: sticky;
   top: 100px;
   margin-bottom: 100px;

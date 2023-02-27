@@ -408,69 +408,58 @@ main .skills h2 {
 main .skills .all-skills {
   display: flex;
   justify-content: space-between;
-  margin: 50px 0;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  margin: 40px auto;
+  width: 80%;
 }
-main .skills .all-skills #blue {
-  background: #0f007d;
+@media screen and (max-width: 994px) {
+  main .skills .all-skills {
+    justify-content: center;
+  }
 }
-main .skills .all-skills #white {
-  background: #fff;
+main .skills .all-skills h3 {
+  font-family: barracuda-bold, serif;
+  font-size: 30px;
 }
-main .skills .all-skills #orange {
-  background: #e94731;
+@media screen and (max-width: 567px) {
+  main .skills .all-skills h3 {
+    font-size: 24px;
+  }
 }
 main .skills .all-skills .skills-container {
-  width: 300px;
-  height: 300px;
-  margin: 50px;
-  color: #000;
+  margin-top: 50px;
+  width: 400px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-@media screen and (max-width: 537px) {
-  main .skills .all-skills .skills-container {
-    margin: 50px 0;
-    width: 200px;
-    height: 200px;
-  }
-}
-main .skills .all-skills .skills-container p {
-  font-family: barracuda-bold, serif;
-  font-size: 24px;
-  position: absolute;
-  text-align: center;
-}
-@media screen and (max-width: 967px) {
-  main .skills .all-skills .skills-container p {
-    top: 30px;
-  }
-}
-main .skills .all-skills .skills-container .logo-skills {
-  align-items: center;
-  justify-content: center;
-  width: 90%;
-  display: none;
   flex-wrap: wrap;
-  margin: 30px 30px;
 }
-@media screen and (max-width: 967px) {
-  main .skills .all-skills .skills-container .logo-skills {
-    display: flex !important;
+@media screen and (max-width: 720px) {
+  main .skills .all-skills .skills-container {
+    width: 300px;
   }
 }
-main .skills .all-skills .skills-container .logo-skills img {
-  transition: all 0.3s ease-in-out;
-  margin: 5px 5px;
+main .skills .all-skills .skills-container img {
+  margin: 5px;
 }
-@media screen and (max-width: 537px) {
-  main .skills .all-skills .skills-container .logo-skills img {
-    width: 20%;
+main .skills .all-skills .developpement {
+  margin-left: 50px;
+}
+@media screen and (max-width: 720px) {
+  main .skills .all-skills .developpement {
+    margin-left: 0;
+  }
+}
+main .skills .all-skills .design {
+  margin-left: 50px;
+}
+@media screen and (max-width: 994px) {
+  main .skills .all-skills .design {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 720px) {
+  main .skills .all-skills .design {
+    margin-top: 50px;
+    margin-left: 0;
   }
 }
 main .contact {
