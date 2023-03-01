@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://www.clariocadran.com/</loc>
+  <lastmod>2023-03-01T13:18:38+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.clariocadran.com/projects/projects</loc>
+  <lastmod>2023-03-01T13:18:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.clariocadran.com/project/montblanc/montblanc</loc>
+  <lastmod>2023-03-01T13:18:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.clariocadran.com/project/find%20your%20country/country</loc>
+  <lastmod>2023-03-01T13:18:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.clariocadran.com/project/greeny/greeny</loc>
+  <lastmod>2023-03-01T13:18:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.clariocadran.com/project/musee/musee</loc>
+  <lastmod>2023-03-01T13:18:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.clariocadran.com/project/sport%20app/sport</loc>
+  <lastmod>2023-03-01T13:18:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.clariocadran.com/project/youtube/youtube</loc>
+  <lastmod>2023-03-01T13:18:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.clariocadran.com/index.html</loc>
+  <lastmod>2023-03-01T13:18:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.clariocadran.com/projects/projects.html</loc>
+  <lastmod>2023-03-01T13:18:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
