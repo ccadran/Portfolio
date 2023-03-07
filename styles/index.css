@@ -378,7 +378,7 @@ main .projects .project .img-container img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: grayscale(100%);
+  filter: grayscale(0%);
 }
 main .projects #other-project {
   padding: 15px;

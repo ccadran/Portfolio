@@ -4,12 +4,10 @@ const navUl = document.querySelector(".nav-container ul");
 const body = document.querySelector("body");
 const mouses = document.querySelectorAll(".mouse");
 const burgerChilds = document.querySelectorAll(".burger-child");
-console.log(burgerChilds);
 
 function skillsHover() {
     Array.prototype.forEach.call(skillsContainers, (container) => {
         container.addEventListener("mouseenter", () => {
-            console.log("testtt");
             const logoSkills = container.querySelectorAll(".logo-skills");
             Array.prototype.forEach.call(logoSkills, (logo) => {
                 logo.style.display = "flex";
@@ -31,7 +29,6 @@ skillsHover();
 
 let lastScroll = 0;
 const nav = document.querySelector("nav");
-console.log(nav);
 window.addEventListener("scroll", () => {
     if (btnBurger.classList.contains("active")) {
     } else {
@@ -44,37 +41,50 @@ window.addEventListener("scroll", () => {
 
     lastScroll = window.scrollY;
 });
-
-const project = document.querySelectorAll(".project ");
-Array.prototype.forEach.call(project, (project) => {
-    console.log(project);
-
-    project.addEventListener("mouseenter", () => {
-        project.style.scale = "1.1";
-        const imgs = project.querySelectorAll("img");
-        Array.prototype.forEach.call(imgs, (img) => {
-            img.style.filter = "grayscale(0%)";
-        });
-    });
-    project.addEventListener("mouseleave", () => {
-        project.style.scale = "1";
-        const imgs = project.querySelectorAll("img");
+function blackImg() {
+    if (window.matchMedia("(min-width: 968px)").matches) {
+        const project = document.querySelectorAll(".project ");
+        const imgs = document.querySelectorAll(".project img");
         Array.prototype.forEach.call(imgs, (img) => {
             img.style.filter = "grayscale(100%)";
         });
-    });
-});
+        Array.prototype.forEach.call(project, (project) => {
+            project.addEventListener("mouseenter", () => {
+                project.style.scale = "1.1";
 
+                Array.prototype.forEach.call(imgs, (img) => {
+                    img.style.filter = "grayscale(0%)";
+                });
+            });
+            project.addEventListener("mouseleave", () => {
+                project.style.scale = "1";
+                const imgs = project.querySelectorAll("img");
+                Array.prototype.forEach.call(imgs, (img) => {
+                    img.style.filter = "grayscale(100%)";
+                });
+            });
+        });
+    } else {
+        const imgs = document.querySelectorAll(".project img");
+        Array.prototype.forEach.call(imgs, (img) => {
+            img.style.filter = "grayscale(0%)";
+        });
+    }
+}
+blackImg();
+window.addEventListener("resize", blackImg);
+// if (innerWidth > 1023) {
+//     blackImg();
+//     console.log("test img");
+// }
 btnBurger.addEventListener("click", () => {
     btnBurger.classList.toggle("active");
     navUl.classList.toggle("active");
     nav.classList.toggle("active");
     if (btnBurger.classList.contains("active")) {
-        console.log(window.scrollY);
         navUl.style.height = window.innerHeight + "px";
         navUl.style.width = window.innerWidth + "px";
-        // navUl.style.top = window.scrollY - 10 + "px";
-        // console.log(window.scrollY);
+
         body.style = "overflow:hidden";
     } else {
         body.style = "overflow:scroll";
@@ -83,7 +93,6 @@ btnBurger.addEventListener("click", () => {
 burgerChilds.forEach((child) => {
     if (
         child.addEventListener("click", () => {
-            console.log("test");
             btnBurger.classList.remove("active");
             navUl.classList.remove("active");
             nav.classList.remove("active");
@@ -96,9 +105,7 @@ function btnBurgerOnScroll() {
     window.addEventListener("scroll", () => {
         if (window.scrollY > 60) {
             if (window.scrollY < lastScroll2) {
-                console.log(window.scrollY);
                 btnBurger.style.top = "30px";
-                console.log(lastScroll2);
             } else {
                 btnBurger.style.top = "-60px";
             }
