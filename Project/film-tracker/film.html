@@ -12,13 +12,13 @@
       name="keywords"
       content="développement web, création de sites, internet, portfolio, API, clario"
     />
-    <meta property="og:title" content="MMI Portfolio" />
+    <meta property="og:title" content="Film Tracker" />
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content="Site regrouppant mes projets réalisés dans ma formation MMI"
+      content="Site permettant de trouver un pays à l'aide d'une recherche et de classer ce résultat."
     />
-    <title>MMI Portfolio</title>
+    <title>Film Tracker</title>
     <link rel="stylesheet" href="../style p/index.css" />
     <link rel="icon" type="image/png" href="/asstets/img/logo/logo-site.png" />
   </head>
@@ -41,17 +41,21 @@
         </div>
       </nav>
       <div class="hero-container">
-        <h1>MMI Portfolio</h1>
+        <h1>Film Tracker</h1>
         <div class="presentation">
           <h4>WebSite * React-SCSS * 2023</h4>
           <p>
-            Site internet réalisé avec React et la librairie framer motion,
-            ayant pour but de mettre en avant différent projet que j’ai pu
-            réalisé au cours de ma formation.
+            Site internet permettant de trouver rapidement un film, de découvrir
+            sa note, son synopsis, son genre …
+            <br />
+            Il est par la suite possible de classer ses films par leurs notes.
+            <br />
+            On peut également ajouter un film dans nos favoris pour facilement
+            les retrouver.
           </p>
           <button class="view-project">
             <a
-              href="https://mmi-portfolio.netlify.app/"
+              href="https://film-tracker.netlify.app/"
               target="_blank"
               rel="noopener"
               >View Project</a
@@ -63,45 +67,41 @@
     <main>
       <section class="cover">
         <img
-          src="./assets mmi-portfolio/cover-mmi.png"
-          alt="Page d'acceuil du site MMI portfolio"
+          src="./assets/cover.png"
+          alt="Page d'acceuil du site Film Tracker"
         />
       </section>
       <section class="project-description">
         <div class="txt-project">
-          <h4>Mmi Porfolio</h4>
+          <h4>Film Tracker</h4>
           <p>
-            Ce site assez petit m’a surtout permis de mettre en pratique les
-            bases de React avec par exemple les components et comment bien les
-            utilisés mais surtout comment se structure et s’organise un projet.
-            <br />
-            J’ai aussi pu utiliser la librairie framer motion pour créer
-            différentes animations.
+            Ce projet réalisé en React m’a permis de valider beaucoup de concept
+            du framework. <br /><br />
+            Le site permet de trouver rapidement un film à partir de son nom
+            grâce a l’appel a une API, les résultats s’affichent ensuite dans
+            des « card ». L’ensemble des résultats peuvent être par la suite
+            trier de façon croissante ou décroissant par rapport à leurs notes.
             <br /><br />
-            Ce projet faisant partie de la formation en ligne que je suis-je
-            n’ai pas eu à réaliser le style et j’ai seulement modifier quelques
-            variables scss pour le personaliser.
+            La « card » a une fonctionnalité qui permet d’ajouter un film dans
+            nos favoris, en les stockants dans le local storage.
           </p>
         </div>
 
         <div class="img-project">
           <div class="img-container">
             <img
-              src="./assets mmi-portfolio/project.png"
-              alt="Page d'acceuil du site Find Your Country"
+              src="./assets/home.png"
+              alt="Page d'acceuil du site Film Tracker"
             />
           </div>
           <div class="img-container">
             <img
-              src="./assets mmi-portfolio/project-hover.png"
-              alt="Paramètres de recherche di site Find Your Country"
+              src="./assets/cards.png"
+              alt="Paramètres de recherche di site Film Tracker"
             />
           </div>
           <div class="img-container">
-            <img
-              src="./assets mmi-portfolio/about.png"
-              alt="Résultat d'une recherche"
-            />
+            <img src="./assets/favoris.png" alt="Résultat d'une recherche" />
           </div>
         </div>
       </section>
@@ -123,14 +123,13 @@
             </li>
           </ul>
           <p>
-            Utilisation de React pour la réalisation de l’ensemble du site
-            internet et de Scss pour ce qui est du style. Le site s’appuie sur
-            l’API ‘the movie database’ pour récupérer toutes les informations de
-            chaque film.
+            Utilisation de React pour la réalisation du projet mais également de
+            la librairie framer motion qui m’a permis de créer des animations et
+            d’en randomiser certaines.
           </p>
           <button class="view-project">
             <a
-              href="https://country-finder-api.netlify.app/"
+              href="https://film-tracker.netlify.app/"
               target="_blank"
               rel="noopener"
               >View Project</a
