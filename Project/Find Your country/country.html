@@ -1,248 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Site permettant de trouver un pays à l'aide d'une recherche et de classer ce résultat."
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Site permettant de trouver un pays à l'aide d'une recherche et de classer ce résultat."
+    />
+    <meta
+      name="keywords"
+      content="développement web, création de sites, internet, portfolio, API, clario"
+    />
+    <meta property="og:title" content="Find Your Country" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Site permettant de trouver un pays à l'aide d'une recherche et de classer ce résultat."
+    />
+    <title>Find Your Country</title>
+    <link rel="stylesheet" href="../style p/index.css" />
+    <link rel="icon" type="image/png" href="/asstets/img/logo/logo-site.png" />
+  </head>
+  <body>
+    <section class="hero">
+      <nav>
+        <div class="nav-container">
+          <h4><a href="/index.html">Home</a></h4>
+          <ul>
+            <li><a href="/Projects/projects.html">Projects</a></li>
+            <li><a href="/index.html#about">About Me</a></li>
+            <li><a href="/index.html#skills">Skills</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+          <div class="toggle-btn" id="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+      <div class="hero-container">
+        <h1>Find Your Country</h1>
+        <div class="presentation">
+          <h4>WebSite * HTML-SCSS * 2022</h4>
+          <p>
+            Site internet permettant de trouver un pays en fonction de son nom
+            et ensuite de pouvoir classer les résultats dans l’ordre croissant
+            ou décroissant par rapport à son nombre d’habitants, ou bien de les
+            classer par ordre alphabétique.
+            <br /><br />
+            J’ai réalisé ce projet à l’aide d’une API gratuite dans le cadre de
+            la formation en ligne que je suis.
+          </p>
+          <button class="view-project">
+            <a
+              href="https://country-finder-api.netlify.app/"
+              target="_blank"
+              rel="noopener"
+              >View Project</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section class="cover">
+        <img
+          src="./assets/home-country.png"
+          alt="Page d'acceuil du site Find Your Country"
         />
-        <meta
-            name="keywords"
-            content="développement web, création de sites, internet, portfolio, API, clario"
-        />
-        <meta property="og:title" content="Find Your Country" />
-        <meta property="og:type" content="website" />
-        <meta
-            property="og:description"
-            content="Site permettant de trouver un pays à l'aide d'une recherche et de classer ce résultat."
-        />
-        <title>Find Your Country</title>
-        <link rel="stylesheet" href="../style p/index.css" />
-        <link
-            rel="icon"
-            type="image/png"
-            href="/asstets/img/logo/logo-site.png"
-        />
-    </head>
-    <body>
-        <section class="hero">
-            <nav>
-                <div class="nav-container">
-                    <h4><a href="/index.html">Home</a></h4>
-                    <ul>
-                        <li><a href="/Projects/projects.html">Projects</a></li>
-                        <li><a href="/index.html#about">About Me</a></li>
-                        <li><a href="/index.html#skills">Skills</a></li>
-                        <li><a href="/index.html#contact">Contact</a></li>
-                    </ul>
-                    <div class="toggle-btn" id="btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </nav>
-            <div class="hero-container">
-                <h1>Find Your Country</h1>
-                <div class="presentation">
-                    <h4>WebSite * HTML-SCSS * 2022</h4>
-                    <p>
-                        Site internet permettant de trouver un pays en fonction
-                        de son nom et ensuite de pouvoir classer les résultats
-                        dans l’ordre croissant ou décroissant par rapport à son
-                        nombre d’habitants, ou bien de les classer par ordre
-                        alphabétique.
-                        <br /><br />
-                        J’ai réalisé ce projet à l’aide d’une API gratuite dans
-                        le cadre de la formation en ligne que je suis.
-                    </p>
-                    <button class="view-project">
-                        <a
-                            href="https://country-finder-api.netlify.app/"
-                            target="_blank"
-                            rel="noopener"
-                            >View Project</a
-                        >
-                    </button>
-                </div>
-            </div>
-        </section>
-        <main>
-            <section class="cover">
-                <img
-                    src="./assets/home-country.png"
-                    alt="Page d'acceuil du site Find Your Country"
-                />
-            </section>
-            <section class="project-description">
-                <div class="txt-project">
-                    <h4>Find Your Country</h4>
-                    <p>
-                        Visuellement assez simple, ce projet m’a surtout permis
-                        de travailler beaucoup d’éléments de Javascript. En
-                        effet, j'ai pour la première fois pu utiliser une API,
-                        j’ai donc appris à utiliser les fetchs et ce qui va
-                        avec. <br /><br />
+      </section>
+      <section class="project-description">
+        <div class="txt-project">
+          <h4>Find Your Country</h4>
+          <p>
+            Visuellement assez simple, ce projet m’a surtout permis de
+            travailler beaucoup d’éléments de Javascript. En effet, j'ai pour la
+            première fois pu utiliser une API, j’ai donc appris à utiliser les
+            fetchs et ce qui va avec. <br /><br />
 
-                        La logique de ce site est assez simple. L’utilisateur
-                        tape des lettres dans la barre de recherche et en
-                        récupérant ce qui est tapé dedans, j’affiche les pays
-                        comprenant les lettres tapées. Puis l’utilisateur a le
-                        choix de trier ces résultats à l’aide de plusieurs
-                        paramètres : <br />
-                        -ordre de population croissant <br />
-                        -ordre de population décroissant <br />
-                        -ordre alphabétique <br />
-                        Cela a été réalisé à l’aide de la méthode « sort » de
-                        Javascript. <br /><br />
+            La logique de ce site est assez simple. L’utilisateur tape des
+            lettres dans la barre de recherche et en récupérant ce qui est tapé
+            dedans, j’affiche les pays comprenant les lettres tapées. Puis
+            l’utilisateur a le choix de trier ces résultats à l’aide de
+            plusieurs paramètres : <br />
+            -ordre de population croissant <br />
+            -ordre de population décroissant <br />
+            -ordre alphabétique <br />
+            Cela a été réalisé à l’aide de la méthode « sort » de Javascript.
+            <br /><br />
 
-                        Pour ce qui est du style, je l’ai fait rapidement sur
-                        Figma.
-                    </p>
-                </div>
+            Pour ce qui est du style, je l’ai fait rapidement sur Figma.
+          </p>
+        </div>
 
-                <div class="img-project">
-                    <div class="img-container">
-                        <img
-                            src="./assets/home-country.png"
-                            alt="Page d'acceuil du site Find Your Country"
-                        />
-                    </div>
-                    <div class="img-container">
-                        <img
-                            src="./assets/search settings.png"
-                            alt="Paramètres de recherche di site Find Your Country"
-                        />
-                    </div>
-                    <div class="img-container">
-                        <img
-                            src="./assets/search.png"
-                            alt="Résultat d'une recherche"
-                        />
-                    </div>
-                </div>
-            </section>
-            <section class="tools">
-                <h2>Tools</h2>
-                <div class="tools-container">
-                    <ul>
-                        <li>
-                            <img
-                                src="/asstets/img/logo/figma.png"
-                                alt="logo de Figma"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src="/asstets/img/logo/vs code.png"
-                                alt="logo de Visual Studio Code"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src="/asstets/img/logo/html.png"
-                                alt="logo de HTML5"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src="/asstets/img/logo/saas.png"
-                                alt="logo de Saas"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src="/asstets/img/logo/js.png"
-                                alt="logo de Javascript"
-                            />
-                        </li>
-                    </ul>
-                    <p>
-                        Utilisation du Scss pour ce qui est du style, mais ce
-                        projet se concentre plus sur Javascript avec
-                        l’utilisation de l’API « Rest Countries » qui permet
-                        d’obtenir plusieurs informations sur l’ensemble des pays
-                        du monde. J'ai également approfondi le tri de résultat
-                        afin de classer les résultats obtenus en fonction de
-                        différents paramètres.
-                    </p>
-                    <button class="view-project">
-                        <a
-                            href="https://country-finder-api.netlify.app/"
-                            target="_blank"
-                            rel="noopener"
-                            >View Project</a
-                        >
-                    </button>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="main-footer">
-                <div class="left-footer">
-                    <ul>
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="/Projects/projects.html">Projects</a></li>
-                        <li><a href="/index.html#about">About Me</a></li>
-                        <li><a href="/index.html#skills">Skills</a></li>
-                        <li><a href="/index.html#contact">Contact</a></li>
-                    </ul>
-                    <div class="footer-contact">
-                        <a href="mailto:clar.cadran@gmail.com" id="mail"
-                            >clar.cadran@gmail.com</a
-                        >
-                        <ul>
-                            <li>
-                                <a
-                                    href="https://www.linkedin.com/in/clario-cadran-82b20b209/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    ><img
-                                        src="/asstets/img/logo/linkedin-black.png"
-                                        alt="logo de Linkedin"
-                                /></a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.instagram.com/clario_cdrn/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    ><img
-                                        src="/asstets/img/logo/instagram-black.png"
-                                        alt="logo de Instagram"
-                                /></a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://github.com/ccadran"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    ><img
-                                        src="/asstets/img/logo/gitHub.png"
-                                        alt="logo de GitHub"
-                                /></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="right-footer">
-                    <p>
-                        Pour toute idée de projets contactez-moi sur ces réseaux
-                        sociaux ou bien sur cette adresse mail !
-                    </p>
-                </div>
-            </div>
-            <div class="under-footer">
-                <button id="legal">
-                    <a href="/mentions legales/mentions.html"
-                        >Mentions légales</a
-                    >
-                </button>
-                <p>Copyright © 2022. Tous droits réservés.</p>
-            </div>
-        </footer>
-        <script src="../project.js"></script>
-    </body>
+        <div class="img-project">
+          <div class="img-container">
+            <img
+              src="./assets/home-country.png"
+              alt="Page d'acceuil du site Find Your Country"
+            />
+          </div>
+          <div class="img-container">
+            <img
+              src="./assets/search settings.png"
+              alt="Paramètres de recherche di site Find Your Country"
+            />
+          </div>
+          <div class="img-container">
+            <img src="./assets/search.png" alt="Résultat d'une recherche" />
+          </div>
+        </div>
+      </section>
+      <section class="tools">
+        <h2>Tools</h2>
+        <div class="tools-container">
+          <ul>
+            <li>
+              <img src="/asstets/img/logo/figma.png" alt="logo de Figma" />
+            </li>
+            <li>
+              <img
+                src="/asstets/img/logo/vs code.png"
+                alt="logo de Visual Studio Code"
+              />
+            </li>
+            <li>
+              <img src="/asstets/img/logo/html.png" alt="logo de HTML5" />
+            </li>
+            <li>
+              <img src="/asstets/img/logo/saas.png" alt="logo de Saas" />
+            </li>
+            <li>
+              <img src="/asstets/img/logo/js.png" alt="logo de Javascript" />
+            </li>
+          </ul>
+          <p>
+            Utilisation du Scss pour ce qui est du style, mais ce projet se
+            concentre plus sur Javascript avec l’utilisation de l’API « Rest
+            Countries » qui permet d’obtenir plusieurs informations sur
+            l’ensemble des pays du monde. J'ai également approfondi le tri de
+            résultat afin de classer les résultats obtenus en fonction de
+            différents paramètres.
+          </p>
+          <button class="view-project">
+            <a
+              href="https://country-finder-api.netlify.app/"
+              target="_blank"
+              rel="noopener"
+              >View Project</a
+            >
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="main-footer">
+        <div class="left-footer">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/Projects/projects.html">Projects</a></li>
+            <li><a href="/index.html#about">About Me</a></li>
+            <li><a href="/index.html#skills">Skills</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+          <div class="footer-contact">
+            <a href="mailto:clar.cadran@gmail.com" id="mail"
+              >clar.cadran@gmail.com</a
+            >
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/clario-cadran/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    src="/asstets/img/logo/linkedin-black.png"
+                    alt="logo de Linkedin"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/clario_cdrn/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    src="/asstets/img/logo/instagram-black.png"
+                    alt="logo de Instagram"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/ccadran"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="/asstets/img/logo/gitHub.png" alt="logo de GitHub"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-footer">
+          <p>
+            Pour toute idée de projets contactez-moi sur ces réseaux sociaux ou
+            bien sur cette adresse mail !
+          </p>
+        </div>
+      </div>
+      <div class="under-footer">
+        <button id="legal">
+          <a href="/mentions legales/mentions.html">Mentions légales</a>
+        </button>
+        <p>Copyright © 2022. Tous droits réservés.</p>
+      </div>
+    </footer>
+    <script src="../project.js"></script>
+  </body>
 </html>

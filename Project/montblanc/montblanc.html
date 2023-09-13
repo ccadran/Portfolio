@@ -1,227 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Intégration d'une maquette en HTML, CSS et Javascript"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Intégration d'une maquette en HTML, CSS et Javascript"
+    />
+    <meta
+      name="keywords"
+      content="développement web, création de sites, internet, portfolio, clario, javascript"
+    />
+    <meta property="og:title" content="Moto Montblanc" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Intégration d'une maquette en HTML, CSS et Javascript"
+    />
+    <title>Moto Montblanc</title>
+    <link rel="stylesheet" href="../style p/index.css" />
+    <link rel="icon" type="image/png" href="/asstets/img/logo/logo-site.png" />
+  </head>
+  <body>
+    <section class="hero">
+      <nav>
+        <div class="nav-container">
+          <h4><a href="/index.html">Home</a></h4>
+          <ul>
+            <li><a href="/Projects/projects.html">Projects</a></li>
+            <li><a href="/index.html#about">About Me</a></li>
+            <li><a href="/index.html#skills">Skills</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+          <div class="toggle-btn" id="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+      <div class="hero-container">
+        <h1>Montblanc-Moto</h1>
+        <div class="presentation">
+          <h4>WebSite * HTML-SCSS * 2022</h4>
+          <p>
+            Intégration d’une maquette responsive, présentant le concept « Moto
+            Montblanc ». Les assets ont été désignées par Huigyu Kim et la
+            maquette par Dmitry Kiiashko. J’ai intégré cette maquette en faisant
+            du mobile first.
+          </p>
+          <button class="view-project">
+            <a
+              href="https://montblanc-moto.netlify.app"
+              target="_blank"
+              rel="noopener"
+              >View Site</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+    <main>
+      <div class="cover">
+        <img
+          src="./assets montblanc/img/cover.png"
+          alt="Page d'acceuil du sit 'Moto-Montblanc'"
         />
-        <meta
-            name="keywords"
-            content="développement web, création de sites, internet, portfolio, clario, javascript"
-        />
-        <meta property="og:title" content="Moto Montblanc" />
-        <meta property="og:type" content="website" />
-        <meta
-            property="og:description"
-            content="Intégration d'une maquette en HTML, CSS et Javascript"
-        />
-        <title>Moto Montblanc</title>
-        <link rel="stylesheet" href="../style p/index.css" />
-        <link
-            rel="icon"
-            type="image/png"
-            href="/asstets/img/logo/logo-site.png"
-        />
-    </head>
-    <body>
-        <section class="hero">
-            <nav>
-                <div class="nav-container">
-                    <h4><a href="/index.html">Home</a></h4>
-                    <ul>
-                        <li><a href="/Projects/projects.html">Projects</a></li>
-                        <li><a href="/index.html#about">About Me</a></li>
-                        <li><a href="/index.html#skills">Skills</a></li>
-                        <li><a href="/index.html#contact">Contact</a></li>
-                    </ul>
-                    <div class="toggle-btn" id="btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </nav>
-            <div class="hero-container">
-                <h1>Montblanc-Moto</h1>
-                <div class="presentation">
-                    <h4>WebSite * HTML-SCSS * 2022</h4>
-                    <p>
-                        Intégration d’une maquette responsive, présentant le
-                        concept « Moto Montblanc ». Les assets ont été désignées
-                        par Huigyu Kim et la maquette par Dmitry Kiiashko. J’ai
-                        intégré cette maquette en faisant du mobile first.
-                    </p>
-                    <button class="view-project">
-                        <a
-                            href="https://montblanc-moto.netlify.app"
-                            target="_blank"
-                            rel="noopener"
-                            >View Site</a
-                        >
-                    </button>
-                </div>
-            </div>
-        </section>
-        <main>
-            <div class="cover">
-                <img
-                    src="./assets montblanc/img/cover.png"
-                    alt="Page d'acceuil du sit 'Moto-Montblanc'"
-                />
-            </div>
-            <section class="project-description">
-                <div class="txt-project">
-                    <h4>Montblanc-moto</h4>
-                    <p>
-                        En partant d’une maquette mobile trouvée sur Dribble
-                        j’ai designé la page pour toutes les autres tailles
-                        d’écran, j’ai donc pour la première fois fait du mobile
-                        first.
-                        <br /><br />
-                        J’ai fortement apprécié travailler sur ce projet qui m’a
-                        permis d’approfondir beaucoup de notions en CSS et
-                        également en Javascript. <br />
-                        J’ai également pu, pour une des premières fois, bien me
-                        concentrer sur la version mobile d’un projet, en
-                        intégrant par exemple un menu burger, des informations
-                        scrollable horizontalement…
-                    </p>
-                </div>
-                <div class="img-project">
-                    <div class="img-container">
-                        <img
-                            src="./assets montblanc/img/cover.png"
-                            alt="Moto du projet Montblanc vue de côté"
-                        />
-                    </div>
-                    <div class="img-container">
-                        <img
-                            src="./assets montblanc/img/cover tablet.png"
-                            alt="Plan rapproché de la roue arrière de la moto du projet Montblanc"
-                        />
-                    </div>
-                    <div class="img-container">
-                        <img
-                            src="./assets montblanc/img/caracteristiques-mobile.jpg"
-                            alt="Gif montrant le guidon de la moto se lever, tourner de droite à gauche puis se rabaisser"
-                        />
-                    </div>
-                </div>
-            </section>
-            <section class="tools">
-                <h2>Tools</h2>
-                <div class="tools-container">
-                    <ul>
-                        <li>
-                            <img
-                                src="/asstets/img/logo/vs code.png"
-                                alt="logo de Visual Studio Code"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src="/asstets/img/logo/html.png"
-                                alt="logo de HTML5"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src="/asstets/img/logo/saas.png"
-                                alt="logo de Saas"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src="/asstets/img/logo/js.png"
-                                alt="logo de Javascript"
-                            />
-                        </li>
-                    </ul>
-                    <p>
-                        Utilisation du Scss pour l’ensemble du style et
-                        l’animation du logo. Et également de Javascript pour le
-                        comportement de la navbar en fonction du scroll et
-                        surtout pour ce qui est du menu burger en dessous d’une
-                        certaine largeur d’écran.
-                    </p>
-                    <button class="view-project">
-                        <a
-                            href="https://montblanc-moto.netlify.app"
-                            target="_blank"
-                            rel="noopener"
-                            >View Site</a
-                        >
-                    </button>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="main-footer">
-                <div class="left-footer">
-                    <ul>
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="/Projects/projects.html">Projects</a></li>
-                        <li><a href="/index.html#about">About Me</a></li>
-                        <li><a href="/index.html#skills">Skills</a></li>
-                        <li><a href="/index.html#contact">Contact</a></li>
-                    </ul>
-                    <div class="footer-contact">
-                        <a href="mailto:clar.cadran@gmail.com" id="mail"
-                            >clar.cadran@gmail.com</a
-                        >
-                        <ul>
-                            <li>
-                                <a
-                                    href="https://www.linkedin.com/in/clario-cadran-82b20b209/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    ><img
-                                        src="/asstets/img/logo/linkedin-black.png"
-                                        alt="logo de Linkedin"
-                                /></a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.instagram.com/clario_cdrn/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    ><img
-                                        src="/asstets/img/logo/instagram-black.png"
-                                        alt="logo de Instagram"
-                                /></a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://github.com/ccadran"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    ><img
-                                        src="/asstets/img/logo/gitHub.png"
-                                        alt="logo de GitHub"
-                                /></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="right-footer">
-                    <p>
-                        Pour toute idée de projets contactez-moi sur ces réseaux
-                        sociaux ou bien sur cette adresse mail !
-                    </p>
-                </div>
-            </div>
-            <div class="under-footer">
-                <button id="legal">
-                    <a href="/mentions legales/mentions.html"
-                        >Mentions légales</a
-                    >
-                </button>
-                <p>Copyright © 2022. Tous droits réservés.</p>
-            </div>
-        </footer>
-        <script src="../project.js"></script>
-    </body>
+      </div>
+      <section class="project-description">
+        <div class="txt-project">
+          <h4>Montblanc-moto</h4>
+          <p>
+            En partant d’une maquette mobile trouvée sur Dribble j’ai designé la
+            page pour toutes les autres tailles d’écran, j’ai donc pour la
+            première fois fait du mobile first.
+            <br /><br />
+            J’ai fortement apprécié travailler sur ce projet qui m’a permis
+            d’approfondir beaucoup de notions en CSS et également en Javascript.
+            <br />
+            J’ai également pu, pour une des premières fois, bien me concentrer
+            sur la version mobile d’un projet, en intégrant par exemple un menu
+            burger, des informations scrollable horizontalement…
+          </p>
+        </div>
+        <div class="img-project">
+          <div class="img-container">
+            <img
+              src="./assets montblanc/img/cover.png"
+              alt="Moto du projet Montblanc vue de côté"
+            />
+          </div>
+          <div class="img-container">
+            <img
+              src="./assets montblanc/img/cover tablet.png"
+              alt="Plan rapproché de la roue arrière de la moto du projet Montblanc"
+            />
+          </div>
+          <div class="img-container">
+            <img
+              src="./assets montblanc/img/caracteristiques-mobile.jpg"
+              alt="Gif montrant le guidon de la moto se lever, tourner de droite à gauche puis se rabaisser"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="tools">
+        <h2>Tools</h2>
+        <div class="tools-container">
+          <ul>
+            <li>
+              <img
+                src="/asstets/img/logo/vs code.png"
+                alt="logo de Visual Studio Code"
+              />
+            </li>
+            <li>
+              <img src="/asstets/img/logo/html.png" alt="logo de HTML5" />
+            </li>
+            <li>
+              <img src="/asstets/img/logo/saas.png" alt="logo de Saas" />
+            </li>
+            <li>
+              <img src="/asstets/img/logo/js.png" alt="logo de Javascript" />
+            </li>
+          </ul>
+          <p>
+            Utilisation du Scss pour l’ensemble du style et l’animation du logo.
+            Et également de Javascript pour le comportement de la navbar en
+            fonction du scroll et surtout pour ce qui est du menu burger en
+            dessous d’une certaine largeur d’écran.
+          </p>
+          <button class="view-project">
+            <a
+              href="https://montblanc-moto.netlify.app"
+              target="_blank"
+              rel="noopener"
+              >View Site</a
+            >
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="main-footer">
+        <div class="left-footer">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/Projects/projects.html">Projects</a></li>
+            <li><a href="/index.html#about">About Me</a></li>
+            <li><a href="/index.html#skills">Skills</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+          <div class="footer-contact">
+            <a href="mailto:clar.cadran@gmail.com" id="mail"
+              >clar.cadran@gmail.com</a
+            >
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/clario-cadran/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    src="/asstets/img/logo/linkedin-black.png"
+                    alt="logo de Linkedin"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/clario_cdrn/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    src="/asstets/img/logo/instagram-black.png"
+                    alt="logo de Instagram"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/ccadran"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="/asstets/img/logo/gitHub.png" alt="logo de GitHub"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-footer">
+          <p>
+            Pour toute idée de projets contactez-moi sur ces réseaux sociaux ou
+            bien sur cette adresse mail !
+          </p>
+        </div>
+      </div>
+      <div class="under-footer">
+        <button id="legal">
+          <a href="/mentions legales/mentions.html">Mentions légales</a>
+        </button>
+        <p>Copyright © 2022. Tous droits réservés.</p>
+      </div>
+    </footer>
+    <script src="../project.js"></script>
+  </body>
 </html>
